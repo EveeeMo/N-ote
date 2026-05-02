@@ -1,0 +1,876 @@
+[
+  {
+    "unitId": "dele_a2.g000",
+    "title": "DELE A2 · 第 1 组",
+    "bookId": "dele_a2",
+    "sortOrder": 0,
+    "words": [
+      {
+        "es": "acuerdo",
+        "zh": "协议；一致",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "aunque",
+        "zh": "虽然；尽管",
+        "pos": "conj",
+        "note": null
+      },
+      {
+        "es": "consejo",
+        "zh": "建议",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "decidir",
+        "zh": "决定",
+        "pos": "verb",
+        "note": null,
+        "lemma": "decidir"
+      },
+      {
+        "es": "desarrollo",
+        "zh": "发展",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "empleo",
+        "zh": "就业；工作",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "encargarse",
+        "zh": "负责",
+        "pos": "verb",
+        "note": null,
+        "lemma": "encargarse"
+      },
+      {
+        "es": "esfuerzo",
+        "zh": "努力",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "experiencia",
+        "zh": "经验；经历",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "formación",
+        "zh": "培训；形成",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g001",
+    "title": "DELE A2 · 第 2 组",
+    "bookId": "dele_a2",
+    "sortOrder": 1,
+    "words": [
+      {
+        "es": "gastar",
+        "zh": "花费",
+        "pos": "verb",
+        "note": null,
+        "lemma": "gastar"
+      },
+      {
+        "es": "gasto",
+        "zh": "开支",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "habitual",
+        "zh": "通常的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "incluso",
+        "zh": "甚至",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "independiente",
+        "zh": "独立的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "informe",
+        "zh": "报告",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "mantener",
+        "zh": "保持",
+        "pos": "verb",
+        "note": null,
+        "lemma": "mantener"
+      },
+      {
+        "es": "matrícula",
+        "zh": "注册；学费",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "mejorar",
+        "zh": "改善",
+        "pos": "verb",
+        "note": null,
+        "lemma": "mejorar"
+      },
+      {
+        "es": "objetivo",
+        "zh": "目标",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g002",
+    "title": "DELE A2 · 第 3 组",
+    "bookId": "dele_a2",
+    "sortOrder": 2,
+    "words": [
+      {
+        "es": "ofrecer",
+        "zh": "提供",
+        "pos": "verb",
+        "note": null,
+        "lemma": "ofrecer"
+      },
+      {
+        "es": "oportunidad",
+        "zh": "机会",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "organizar",
+        "zh": "组织",
+        "pos": "verb",
+        "note": null,
+        "lemma": "organizar"
+      },
+      {
+        "es": "participar",
+        "zh": "参加",
+        "pos": "verb",
+        "note": null,
+        "lemma": "participar"
+      },
+      {
+        "es": "permiso",
+        "zh": "许可",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "plazo",
+        "zh": "期限",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "preparar",
+        "zh": "准备",
+        "pos": "verb",
+        "note": null,
+        "lemma": "preparar"
+      },
+      {
+        "es": "presupuesto",
+        "zh": "预算",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "próximo",
+        "zh": "下一个；即将",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "reunión",
+        "zh": "会议",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g003",
+    "title": "DELE A2 · 第 4 组",
+    "bookId": "dele_a2",
+    "sortOrder": 3,
+    "words": [
+      {
+        "es": "el acuerdo",
+        "zh": "协议",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la costumbre",
+        "zh": "习惯",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el hábito",
+        "zh": "习惯",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la costumbre",
+        "zh": "风俗",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el consejo",
+        "zh": "建议",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "aconsejar",
+        "zh": "建议",
+        "pos": "verb",
+        "note": null,
+        "lemma": "aconsejar"
+      },
+      {
+        "es": "sugerir",
+        "zh": "暗示；建议",
+        "pos": "verb",
+        "note": null,
+        "lemma": "sugerir"
+      },
+      {
+        "es": "la sugerencia",
+        "zh": "建议",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el problema",
+        "zh": "问题",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la solución",
+        "zh": "解决办法",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g004",
+    "title": "DELE A2 · 第 5 组",
+    "bookId": "dele_a2",
+    "sortOrder": 4,
+    "words": [
+      {
+        "es": "resolver",
+        "zh": "解决",
+        "pos": "verb",
+        "note": null,
+        "lemma": "resolver"
+      },
+      {
+        "es": "mejorar",
+        "zh": "改善",
+        "pos": "verb",
+        "note": null,
+        "lemma": "mejorar"
+      },
+      {
+        "es": "empeorar",
+        "zh": "变坏",
+        "pos": "verb",
+        "note": null,
+        "lemma": "empeorar"
+      },
+      {
+        "es": "el éxito",
+        "zh": "成功",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el fracaso",
+        "zh": "失败",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "conseguir",
+        "zh": "获得",
+        "pos": "verb",
+        "note": null,
+        "lemma": "conseguir"
+      },
+      {
+        "es": "lograr",
+        "zh": "实现",
+        "pos": "verb",
+        "note": null,
+        "lemma": "lograr"
+      },
+      {
+        "es": "intentar",
+        "zh": "尝试",
+        "pos": "verb",
+        "note": null,
+        "lemma": "intentar"
+      },
+      {
+        "es": "conseguir",
+        "zh": "设法做到",
+        "pos": "verb",
+        "note": null,
+        "lemma": "conseguir"
+      },
+      {
+        "es": "fallar",
+        "zh": "失败",
+        "pos": "verb",
+        "note": null,
+        "lemma": "fallar"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g005",
+    "title": "DELE A2 · 第 6 组",
+    "bookId": "dele_a2",
+    "sortOrder": 5,
+    "words": [
+      {
+        "es": "la oportunidad",
+        "zh": "机会",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el riesgo",
+        "zh": "风险",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "arriesgar",
+        "zh": "冒险",
+        "pos": "verb",
+        "note": null,
+        "lemma": "arriesgar"
+      },
+      {
+        "es": "seguro",
+        "zh": "安全的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "peligroso",
+        "zh": "危险的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el peligro",
+        "zh": "危险",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la seguridad",
+        "zh": "安全",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "cuidado",
+        "zh": "小心",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "cuidar",
+        "zh": "照顾",
+        "pos": "verb",
+        "note": null,
+        "lemma": "cuidar"
+      },
+      {
+        "es": "proteger",
+        "zh": "保护",
+        "pos": "verb",
+        "note": null,
+        "lemma": "proteger"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g006",
+    "title": "DELE A2 · 第 7 组",
+    "bookId": "dele_a2",
+    "sortOrder": 6,
+    "words": [
+      {
+        "es": "el permiso",
+        "zh": "许可",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "prohibido",
+        "zh": "禁止",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "permitir",
+        "zh": "允许",
+        "pos": "verb",
+        "note": null,
+        "lemma": "permitir"
+      },
+      {
+        "es": "evitar",
+        "zh": "避免",
+        "pos": "verb",
+        "note": null,
+        "lemma": "evitar"
+      },
+      {
+        "es": "la razón",
+        "zh": "理由",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la causa",
+        "zh": "原因",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el resultado",
+        "zh": "结果",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "por eso",
+        "zh": "所以",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "sin embargo",
+        "zh": "然而",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "además",
+        "zh": "此外",
+        "pos": "adv",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g007",
+    "title": "DELE A2 · 第 8 组",
+    "bookId": "dele_a2",
+    "sortOrder": 7,
+    "words": [
+      {
+        "es": "aunque",
+        "zh": "虽然",
+        "pos": "conj",
+        "note": null
+      },
+      {
+        "es": "mientras",
+        "zh": "当…时",
+        "pos": "conj",
+        "note": null
+      },
+      {
+        "es": "cuando",
+        "zh": "当…时",
+        "pos": "conj",
+        "note": null
+      },
+      {
+        "es": "después de",
+        "zh": "在…之后",
+        "pos": "prep",
+        "note": null
+      },
+      {
+        "es": "antes de",
+        "zh": "在…之前",
+        "pos": "prep",
+        "note": null
+      },
+      {
+        "es": "durante",
+        "zh": "在…期间",
+        "pos": "prep",
+        "note": null
+      },
+      {
+        "es": "hasta",
+        "zh": "直到",
+        "pos": "prep",
+        "note": null
+      },
+      {
+        "es": "desde",
+        "zh": "从",
+        "pos": "prep",
+        "note": null
+      },
+      {
+        "es": "dentro de",
+        "zh": "在…之内",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "fuera de",
+        "zh": "在…之外",
+        "pos": "phrase",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g008",
+    "title": "DELE A2 · 第 9 组",
+    "bookId": "dele_a2",
+    "sortOrder": 8,
+    "words": [
+      {
+        "es": "el plazo",
+        "zh": "期限",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "a tiempo",
+        "zh": "准时",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "tarde",
+        "zh": "晚",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "temprano",
+        "zh": "早",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "puntual",
+        "zh": "准时的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "la cita",
+        "zh": "约会",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "quedar",
+        "zh": "约定",
+        "pos": "verb",
+        "note": null,
+        "lemma": "quedar"
+      },
+      {
+        "es": "cancelar",
+        "zh": "取消",
+        "pos": "verb",
+        "note": null,
+        "lemma": "cancelar"
+      },
+      {
+        "es": "aplazar",
+        "zh": "推迟",
+        "pos": "verb",
+        "note": null,
+        "lemma": "aplazar"
+      },
+      {
+        "es": "la reunión",
+        "zh": "会议",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g009",
+    "title": "DELE A2 · 第 10 组",
+    "bookId": "dele_a2",
+    "sortOrder": 9,
+    "words": [
+      {
+        "es": "el jefe",
+        "zh": "老板",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el compañero",
+        "zh": "同事",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la empresa",
+        "zh": "公司",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el sueldo",
+        "zh": "工资",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el contrato",
+        "zh": "合同",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "firmar",
+        "zh": "签署",
+        "pos": "verb",
+        "note": null,
+        "lemma": "firmar"
+      },
+      {
+        "es": "el horario",
+        "zh": "时间表",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el turno",
+        "zh": "班次",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la vacaciones",
+        "zh": "假期",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "descansar",
+        "zh": "休息",
+        "pos": "verb",
+        "note": null,
+        "lemma": "descansar"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g010",
+    "title": "DELE A2 · 第 11 组",
+    "bookId": "dele_a2",
+    "sortOrder": 10,
+    "words": [
+      {
+        "es": "el descanso",
+        "zh": "休息",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "preocuparse",
+        "zh": "担心",
+        "pos": "verb",
+        "note": null,
+        "lemma": "preocuparse"
+      },
+      {
+        "es": "la preocupación",
+        "zh": "担心",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "tranquilo",
+        "zh": "平静的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "nervioso",
+        "zh": "紧张的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el estrés",
+        "zh": "压力",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "relajarse",
+        "zh": "放松",
+        "pos": "verb",
+        "note": null,
+        "lemma": "relajarse"
+      },
+      {
+        "es": "el ejercicio",
+        "zh": "锻炼",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "hacer ejercicio",
+        "zh": "锻炼",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "la salud",
+        "zh": "健康",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g011",
+    "title": "DELE A2 · 第 12 组",
+    "bookId": "dele_a2",
+    "sortOrder": 11,
+    "words": [
+      {
+        "es": "enfermo",
+        "zh": "生病的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el médico",
+        "zh": "医生",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la medicina",
+        "zh": "药",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la receta",
+        "zh": "处方",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la farmacia",
+        "zh": "药房",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "doler",
+        "zh": "疼痛",
+        "pos": "verb",
+        "note": null,
+        "lemma": "doler"
+      },
+      {
+        "es": "la tos",
+        "zh": "咳嗽",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el resfriado",
+        "zh": "感冒",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la fiebre",
+        "zh": "发烧",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "mejor",
+        "zh": "更好",
+        "pos": "adj",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a2.g012",
+    "title": "DELE A2 · 第 13 组",
+    "bookId": "dele_a2",
+    "sortOrder": 12,
+    "words": [
+      {
+        "es": "peor",
+        "zh": "更差",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "cansado",
+        "zh": "累的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "descansado",
+        "zh": "休息好的",
+        "pos": "adj",
+        "note": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+个人团队（免费 Apple ID）与付费开发者
+
+一、当前工程
+- 已去掉 **Sign in with Apple** 的 entitlement，以便 **Personal Team** 能正常签名、真机运行。
+- 设置里仅保留 **内测邀请码**；**学习库备份** 的 metadata 仍可含 `testerInviteCode`；`appleUserIdPrefix` 在未实现登录时不会出现。
+
+二、若以后加入付费 Apple Developer Program 并想恢复「通过 Apple 登录」
+1. 在 developer.apple.com 为 App ID 勾选 Sign in with Apple。
+2. 在工程里新建 **MemorizeSpanish.entitlements**，写入 com.apple.developer.applesignin = Default。
+3. Target → Signing & Capabilities 里将 **CODE_SIGN_ENTITLEMENTS** 指回该文件（或于 Xcode 里添加 Capability）。
+4. 恢复 `SettingsView` 中的 Apple 登录 UI 与 `MemorizeSpanishApp` 里对 `AppleAccountManager` 的刷新（可参考 git 历史）。
+
+三、内测邀请码
+见源码 `MemorizeSpanish/Services/TesterAccessService.swift` 的 `TestInviteCodes`。
+
+四、学习库备份
+勿公开分享含个人学习数据的 JSON。

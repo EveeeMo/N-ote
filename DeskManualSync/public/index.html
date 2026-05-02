@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ñote 桌面词库（局域网）</title>
+  <style>
+    :root {
+      --bg: #0f1318;
+      --card: #1a2029;
+      --text: #e8edf4;
+      --muted: #8b96a8;
+      --accent: #5b9bd5;
+      --danger: #c75c6a;
+      --radius: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB",
+        sans-serif;
+    }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 20% -10%, #1e2a3a 0, var(--bg) 45%);
+      color: var(--text);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 650;
+      margin: 0 0 8px;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-bottom: 22px;
+    }
+    section {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+    }
+    label {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin: 12px 0 6px;
+    }
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(0, 0, 0, 0.25);
+      color: var(--text);
+      padding: 10px 12px;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 72px;
+    }
+    .row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    button {
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 0.94rem;
+      cursor: pointer;
+      font-weight: 600;
+      background: var(--accent);
+      color: white;
+      flex: 1;
+      min-width: 140px;
+    }
+    button.secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text);
+    }
+    button.danger-outline {
+      background: transparent;
+      border: 1px solid rgba(199, 92, 106, 0.6);
+      color: #ffa3ad;
+      flex: 0;
+      min-width: auto;
+      padding-inline: 12px;
+    }
+    button:disabled {
+      opacity: 0.45;
+      cursor: default;
+    }
+    .toast {
+      margin-top: 12px;
+      font-size: 0.86rem;
+      min-height: 1.25em;
+      color: #9ee2b4;
+      white-space: pre-wrap;
+    }
+    .toast.err {
+      color: #ff9aab;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    th,
+    td {
+      text-align: left;
+      padding: 9px 6px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 580;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    .hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+    small {
+      font-size: 0.78rem;
+    }
+    .lemma-wrap {
+      display: none;
+    }
+    .lemma-wrap.show {
+      display: block;
+    }
+    mark {
+      background: transparent;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>桌面词库</h1>
+    <p class="sub">与 APP「导入 → 添加单词」同流程。可本地 <code class="mono">npm start</code>，或部署到带 <strong>https</strong> 的云端后，在手机「设置 → 词库同步」填同一地址与令牌，即可在任意地点浏览器录词进手机词库（须给服务端 <code class="mono">data/</code> 持久卷以免重启丢失）。</p>
+
+    <section>
+      <strong>令牌</strong><small>（必须与 APP 设置里完全一致；仅存本浏览器）</small>
+      <label for="tok">Bearer Token</label>
+      <input id="tok" type="text" autocomplete="off" placeholder="默认为 CHANGE_ME_NOTE_DESK_SYNC 或你改的 NOTE_DESK_SYNC_TOKEN" />
+
+      <div class="hint">启动服务时可设环境变量 <code class="mono">NOTE_DESK_SYNC_TOKEN=你的随机串</code> ，并在 APP「桌面词库」里填同一串。</div>
+      <button type="button" class="secondary" id="btnSaveTok">保存令牌到本浏览器</button>
+      <div class="toast" id="tokMsg"></div>
+    </section>
+
+    <section>
+      <strong>添加 / 修改</strong>（同源西语条目会覆盖网页端旧记录）
+      <label for="es">西语</label>
+      <input id="es" type="text" placeholder="单词或短语" />
+
+      <div class="row">
+        <div style="flex: 2; min-width: 200px">
+          <button type="button" class="secondary" id="btnAuto">自动填充中文与词性（联网）</button>
+        </div>
+      </div>
+
+      <label for="zh">中文释义</label>
+      <textarea id="zh" placeholder="可留空再走自动填充"></textarea>
+
+      <label for="pos">词性（与 APP 一致）</label>
+      <select id="pos">
+        <option>noun</option>
+        <option>verb</option>
+        <option>adj</option>
+        <option>adv</option>
+        <option>prep</option>
+        <option>interj</option>
+        <option>phrase</option>
+      </select>
+
+      <div class="lemma-wrap" id="lemmaWrap">
+        <label for="lemma">动词原形（可留空，保存时用当前西语）</label>
+        <input id="lemma" type="text" />
+      </div>
+
+      <label for="note">备注</label>
+      <textarea id="note" placeholder="用法、短语…"></textarea>
+
+      <div class="row" style="margin-top: 14px">
+        <button type="button" id="btnSaveWord">保存到桌面词库</button>
+      </div>
+      <div class="toast" id="formMsg"></div>
+    </section>
+
+    <section>
+      <strong>当前服务端列表</strong> <small id="revLabel"></small>
+      <button type="button" class="secondary" id="btnRefresh" style="margin-top:10px;width:100%;flex:none">刷新列表</button>
+      <div style="overflow-x: auto; margin-top: 10px">
+        <table>
+          <thead>
+            <tr>
+              <th>西语</th>
+              <th>释义</th>
+              <th>词性</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <div class="hint">说明：从 APP 已存在的词仍会按导入规则合并释义；服务端删除一行<strong>不会</strong>从手机删掉已并入的条目（除非你将来做「镜像替换」导入）。</div>
+    </section>
+  </div>
+
+  <script>
+    const STORAGE_KEY = "noteDeskSyncBearer";
+
+    function show(el, msg, isErr) {
+      el.textContent = msg || "";
+      el.classList.toggle("err", !!isErr);
+    }
+
+    function headersAuth() {
+      const t = (document.getElementById("tok").value || "").trim();
+      if (!t) throw new Error("请先填写 Bearer Token（与服务端 NOTE_DESK_SYNC_TOKEN 一致）");
+      return { "Content-Type": "application/json", Authorization: "Bearer " + t };
+    }
+
+    function toggLemma() {
+      const pos = document.getElementById("pos").value;
+      document.getElementById("lemmaWrap").classList.toggle("show", pos === "verb");
+    }
+
+    document.getElementById("tok").value = localStorage.getItem(STORAGE_KEY) || "";
+    document.getElementById("pos").addEventListener("change", toggLemma);
+    toggLemma();
+
+    document.getElementById("btnSaveTok").onclick = () => {
+      const t = document.getElementById("tok").value.trim();
+      localStorage.setItem(STORAGE_KEY, t);
+      show(document.getElementById("tokMsg"), t ? "已保存令牌到本浏览器。" : "已清除（空串）");
+      refreshTable();
+    };
+
+    document.getElementById("btnAuto").onclick = async () => {
+      const msg = document.getElementById("formMsg");
+      show(msg, "");
+      const es = document.getElementById("es").value.trim();
+      if (!es) {
+        show(msg, "请先填写西语。", true);
+        return;
+      }
+      document.getElementById("btnAuto").disabled = true;
+      try {
+        const r = await fetch("/api/translate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ q: es }),
+        });
+        const j = await r.json();
+        if (!r.ok) throw new Error(j.error || "翻译失败");
+        if (j.zh) document.getElementById("zh").value = j.zh;
+        if (j.pos) {
+          document.getElementById("pos").value = j.pos;
+          toggLemma();
+        }
+        show(msg, "已尝试填充（若仍为空白请到 APP 手写或稍后再试，MyMemory 有频率限制）。");
+      } catch (e) {
+        show(msg, String(e.message || e), true);
+      } finally {
+        document.getElementById("btnAuto").disabled = false;
+      }
+    };
+
+    document.getElementById("btnSaveWord").onclick = async () => {
+      const msg = document.getElementById("formMsg");
+      show(msg, "");
+      const payload = {
+        es: document.getElementById("es").value,
+        zh: document.getElementById("zh").value,
+        pos: document.getElementById("pos").value,
+        lemma: document.getElementById("lemma").value,
+        note: document.getElementById("note").value,
+      };
+      document.getElementById("btnSaveWord").disabled = true;
+      try {
+        const r = await fetch("/api/word", {
+          method: "POST",
+          headers: headersAuth(),
+          body: JSON.stringify(payload),
+        });
+        const j = await r.json();
+        if (r.status === 401) throw new Error("令牌无效，请与服务端 NOTE_DESK_SYNC_TOKEN 对齐。");
+        if (!r.ok) throw new Error(j.error || "保存失败");
+        show(msg, "已写入服务端，rev " + j.revision + " ，共 " + j.count + " 条。（APP 打开前台会自动拉取）");
+        await refreshTable();
+      } catch (e) {
+        show(msg, String(e.message || e), true);
+      } finally {
+        document.getElementById("btnSaveWord").disabled = false;
+      }
+    };
+
+    async function refreshTable() {
+      const tbody = document.getElementById("tbody");
+      const revLabel = document.getElementById("revLabel");
+      tbody.innerHTML = "";
+      revLabel.textContent = "";
+      let j;
+      try {
+        const r = await fetch("/api/words", { headers: headersAuth() });
+        j = await r.json();
+        if (r.status === 401) {
+          tbody.innerHTML =
+            '<tr><td colspan="4" class="mono" style="color:#ff9aab">令牌无效或未填</td></tr>';
+          return;
+        }
+        if (!r.ok) throw new Error(j.error || "加载失败");
+      } catch (e) {
+        tbody.innerHTML =
+          '<tr><td colspan="4" style="color:#ff9aab">' + escapeHtml(String(e.message || e)) + "</td></tr>";
+        return;
+      }
+      revLabel.textContent = " revision " + j.revision;
+      for (const w of j.words || []) {
+        const tr = document.createElement("tr");
+        let td = document.createElement("td");
+        td.className = "mono";
+        td.textContent = w.es || "";
+        tr.appendChild(td);
+        td = document.createElement("td");
+        td.textContent = w.zh || "";
+        tr.appendChild(td);
+        td = document.createElement("td");
+        td.textContent = w.pos || "";
+        tr.appendChild(td);
+        td = document.createElement("td");
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "danger-outline";
+        b.textContent = "删";
+        b.onclick = () => deleteWord(w.es);
+        td.appendChild(b);
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+      }
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    }
+
+    async function deleteWord(es) {
+      if (!confirm("仅删除服务端本条；已同步到手机的词不会因此被删除。继续？")) return;
+      try {
+        const r = await fetch("/api/word/delete", {
+          method: "POST",
+          headers: headersAuth(),
+          body: JSON.stringify({ es }),
+        });
+        const j = await r.json();
+        if (!r.ok) throw new Error(j.error || "删除失败");
+        await refreshTable();
+      } catch (e) {
+        alert(String(e.message || e));
+      }
+    }
+
+    document.getElementById("btnRefresh").onclick = () => refreshTable();
+
+    refreshTable().catch(() => {});
+  </script>
+</body>
+</html>

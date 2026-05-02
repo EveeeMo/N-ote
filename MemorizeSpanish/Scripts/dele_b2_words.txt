@@ -1,0 +1,99 @@
+ambiguo|含糊的|adj
+coherencia|连贯性|noun
+connotación|内涵；隐含意义|noun
+disertar|论述|verb|disertar
+elucubrar|苦思冥想|verb|elucubrar
+epígrafe|题记；标题|noun
+idoneidad|适宜性|noun
+matiz|细微差别|noun
+perplejidad|困惑|noun
+sintetizar|综合；概括|verb|sintetizar
+subyacer|潜在；作为基础|verb|subyacer
+ubicuo|无处不在的|adj
+verosimilitud|似真性|noun
+vicisitud|变故；沧桑|noun
+vocación|天职；志向|noun
+zozobra|忧虑；（船）倾侧|noun
+añoranza|怀念|noun
+beneplácito|赞同；许可|noun
+candor|天真；坦率|noun
+dilucidar|阐明|verb|dilucidar
+efímero|短暂的|adj
+fáctica|事实的（阴性）|adj
+hermenéutica|诠释学|noun
+incipiente|初始的|adj
+inopia|缺乏；无知|noun
+lacónico|简洁的|adj
+magnánimo|宽宏的|adj
+nefasto|不祥的；有害的|adj
+óbice|障碍|noun
+perentorio|紧迫的；终局的|adj
+la disertación|论文|noun
+el ensayo|随笔|noun
+la tesis|论点|noun
+argumentar|论证|verb|argumentar
+matizar|使语气缓和|verb|matizar
+sutil|微妙的|adj
+el matiz|细微差别|noun
+la ironía|讽刺|noun
+el sarcasmo|讽刺|noun
+la ambigüedad|歧义|noun
+ambiguo|含糊的|adj
+el eufemismo|委婉语|noun
+la connotación|内涵|noun
+la denotación|外延|noun
+el registro|语体|noun
+coloquial|口语的|adj
+formal|正式的|adj
+la precisión|精确|noun
+lacónico|简洁的|adj
+el estilo|风格|noun
+el tono|语气|noun
+coherente|连贯的|adj
+incoherente|不连贯的|adj
+la cohesión|衔接|noun
+el conector|连接词|noun
+el párrafo|段落|noun
+el inciso|插入语|noun
+la digresión|离题|noun
+redundante|冗余的|adj
+el pleonasmo|赘述|noun
+el oxímoron|矛盾修辞|noun
+la metáfora|隐喻|noun
+el símil|明喻|noun
+la analogía|类比|noun
+el contraste|对比|noun
+el paralelismo|排比|noun
+parodiar|戏仿|verb|parodiar
+la parodia|戏仿|noun
+la intertextualidad|互文性|noun
+la alusión|典故|noun
+el subtexto|潜台词|noun
+la polisemia|多义性|noun
+la sinonimia|同义|noun
+el antónimo|反义词|noun
+el campo semántico|语义场|phrase
+la pragmática|语用学|noun
+el acto de habla|言语行为|phrase
+la implicatura|含意|noun
+el presupuesto|预设|noun
+inferir|推断|verb|inferir
+la inferencia|推断|noun
+deducir|演绎|verb|deducir
+inducir|归纳|verb|inducir
+la deducción|演绎|noun
+la inducción|归纳|noun
+el razonamiento|推理|noun
+el silogismo|三段论|noun
+el sofisma|诡辩|noun
+refutar|驳斥|verb|refutar
+replicar|反驳|verb|replicar
+la réplica|反驳|noun
+el contraargumento|反方论点|noun
+la objeción|反对意见|noun
+el sesgo|偏见|noun
+parcial|片面的|adj
+imparcial|公正的|adj
+la idoneidad|适当|noun
+pertinente|相关的|adj
+impertinente|不相关的|adj

@@ -1,0 +1,22 @@
+[
+  {
+    "unitId": "demo.spanish_a1_u1",
+    "title": "示例 ·入门词汇",
+    "bookId": "demo",
+    "sortOrder": 1,
+    "words": [
+      { "es": "hola", "zh": "你好；喂", "pos": "interj", "lemma": null, "note": "常见问候，可接名字：Hola, Ana." },
+      { "es": "gracias", "zh": "谢谢", "pos": "noun", "lemma": null, "note": "固定用复数形式表感谢。" },
+      { "es": "hablar", "zh": "说话；讲（某种语言）", "pos": "verb", "lemma": "hablar", "note": "hablar español 说西班牙语" },
+      { "es": "comer", "zh": "吃", "pos": "verb", "lemma": "comer", "note": "comer fuera 外出就餐" },
+      { "es": "libro", "zh": "书", "pos": "noun", "lemma": null, "note": "un libro / los libros" }
+    ]
+  },
+  {
+    "unitId": "unit.manual",
+    "title": "手动添加",
+    "bookId": "manual",
+    "sortOrder": 100,
+    "words": []
+  }
+]

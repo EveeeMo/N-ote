@@ -1,0 +1,921 @@
+[
+  {
+    "unitId": "xiandai.1.l01",
+    "title": "现西1 · 第1课 发音与问候",
+    "bookId": "xiandai_1",
+    "sortOrder": 1,
+    "words": [
+      {
+        "es": "letra",
+        "zh": "字母",
+        "pos": "noun"
+      },
+      {
+        "es": "saludo",
+        "zh": "问候",
+        "pos": "noun"
+      },
+      {
+        "es": "buenas noches",
+        "zh": "晚上好",
+        "pos": "phrase"
+      },
+      {
+        "es": "encantado",
+        "zh": "很高兴（认识）",
+        "pos": "adj",
+        "note": "阳性；encantada"
+      },
+      {
+        "es": "presentación",
+        "zh": "介绍",
+        "pos": "noun"
+      },
+      {
+        "es": "llamarse",
+        "zh": "名叫",
+        "pos": "verb",
+        "lemma": "llamarse",
+        "note": "Me llamo…"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l02",
+    "title": "现西1 · 第2课 语音与拼读",
+    "bookId": "xiandai_1",
+    "sortOrder": 2,
+    "words": [
+      {
+        "es": "acento",
+        "zh": "重音",
+        "pos": "noun"
+      },
+      {
+        "es": "sílaba",
+        "zh": "音节",
+        "pos": "noun"
+      },
+      {
+        "es": "pronunciación",
+        "zh": "发音",
+        "pos": "noun"
+      },
+      {
+        "es": "sonido",
+        "zh": "音；声音",
+        "pos": "noun"
+      },
+      {
+        "es": "vocal",
+        "zh": "元音",
+        "pos": "noun"
+      },
+      {
+        "es": "consonante",
+        "zh": "辅音",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l03",
+    "title": "现西1 · 第3课 课堂用语",
+    "bookId": "xiandai_1",
+    "sortOrder": 3,
+    "words": [
+      {
+        "es": "clase",
+        "zh": "课；班级",
+        "pos": "noun"
+      },
+      {
+        "es": "pizarra",
+        "zh": "黑板",
+        "pos": "noun"
+      },
+      {
+        "es": "cuaderno",
+        "zh": "练习本",
+        "pos": "noun"
+      },
+      {
+        "es": "bolígrafo",
+        "zh": "圆珠笔",
+        "pos": "noun"
+      },
+      {
+        "es": "pregunta",
+        "zh": "问题",
+        "pos": "noun"
+      },
+      {
+        "es": "respuesta",
+        "zh": "回答",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l04",
+    "title": "现西1 · 第4课 人称与动词",
+    "bookId": "xiandai_1",
+    "sortOrder": 4,
+    "words": [
+      {
+        "es": "yo",
+        "zh": "我",
+        "pos": "noun",
+        "note": "人称代词"
+      },
+      {
+        "es": "tú",
+        "zh": "你",
+        "pos": "noun"
+      },
+      {
+        "es": "él",
+        "zh": "他",
+        "pos": "noun"
+      },
+      {
+        "es": "ella",
+        "zh": "她",
+        "pos": "noun"
+      },
+      {
+        "es": "tener",
+        "zh": "有",
+        "pos": "verb",
+        "lemma": "tener",
+        "note": "不规则"
+      },
+      {
+        "es": "haber",
+        "zh": "（无人称）有",
+        "pos": "verb",
+        "lemma": "haber",
+        "note": "Hay…"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l05",
+    "title": "现西1 · 第5课 名词与性别",
+    "bookId": "xiandai_1",
+    "sortOrder": 5,
+    "words": [
+      {
+        "es": "libro",
+        "zh": "书",
+        "pos": "noun"
+      },
+      {
+        "es": "mesa",
+        "zh": "桌子",
+        "pos": "noun"
+      },
+      {
+        "es": "puerta",
+        "zh": "门",
+        "pos": "noun"
+      },
+      {
+        "es": "ventana",
+        "zh": "窗户",
+        "pos": "noun"
+      },
+      {
+        "es": "masculino",
+        "zh": "阳性的",
+        "pos": "adj"
+      },
+      {
+        "es": "femenino",
+        "zh": "阴性的",
+        "pos": "adj"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l06",
+    "title": "现西1 · 第6课 冠词",
+    "bookId": "xiandai_1",
+    "sortOrder": 6,
+    "words": [
+      {
+        "es": "artículo",
+        "zh": "冠词",
+        "pos": "noun"
+      },
+      {
+        "es": "definido",
+        "zh": "确定的",
+        "pos": "adj",
+        "note": "el, la"
+      },
+      {
+        "es": "indefinido",
+        "zh": "不确定的",
+        "pos": "adj",
+        "note": "un, una"
+      },
+      {
+        "es": "un",
+        "zh": "一个（阳性）",
+        "pos": "adj"
+      },
+      {
+        "es": "una",
+        "zh": "一个（阴性）",
+        "pos": "adj"
+      },
+      {
+        "es": "el",
+        "zh": "阳性定冠词",
+        "pos": "adj"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l07",
+    "title": "现西1 · 第7课 描述",
+    "bookId": "xiandai_1",
+    "sortOrder": 7,
+    "words": [
+      {
+        "es": "alto",
+        "zh": "高的",
+        "pos": "adj"
+      },
+      {
+        "es": "bajo",
+        "zh": "矮的",
+        "pos": "adj"
+      },
+      {
+        "es": "joven",
+        "zh": "年轻的",
+        "pos": "adj"
+      },
+      {
+        "es": "viejo",
+        "zh": "年老的；旧的",
+        "pos": "adj"
+      },
+      {
+        "es": "bonito",
+        "zh": "漂亮的",
+        "pos": "adj"
+      },
+      {
+        "es": "feo",
+        "zh": "丑的",
+        "pos": "adj"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l08",
+    "title": "现西1 · 第8课 数字与时间",
+    "bookId": "xiandai_1",
+    "sortOrder": 8,
+    "words": [
+      {
+        "es": "uno",
+        "zh": "一",
+        "pos": "adj"
+      },
+      {
+        "es": "dos",
+        "zh": "二",
+        "pos": "adj"
+      },
+      {
+        "es": "diez",
+        "zh": "十",
+        "pos": "adj"
+      },
+      {
+        "es": "cien",
+        "zh": "一百",
+        "pos": "adj",
+        "note": "ciento"
+      },
+      {
+        "es": "minuto",
+        "zh": "分钟",
+        "pos": "noun"
+      },
+      {
+        "es": "tiempo",
+        "zh": "时间；天气",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l09",
+    "title": "现西1 · 第9课 星期",
+    "bookId": "xiandai_1",
+    "sortOrder": 9,
+    "words": [
+      {
+        "es": "lunes",
+        "zh": "星期一",
+        "pos": "noun"
+      },
+      {
+        "es": "martes",
+        "zh": "星期二",
+        "pos": "noun"
+      },
+      {
+        "es": "miércoles",
+        "zh": "星期三",
+        "pos": "noun"
+      },
+      {
+        "es": "jueves",
+        "zh": "星期四",
+        "pos": "noun"
+      },
+      {
+        "es": "viernes",
+        "zh": "星期五",
+        "pos": "noun"
+      },
+      {
+        "es": "fin de semana",
+        "zh": "周末",
+        "pos": "phrase"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l10",
+    "title": "现西1 · 第10课 月份与季节",
+    "bookId": "xiandai_1",
+    "sortOrder": 10,
+    "words": [
+      {
+        "es": "enero",
+        "zh": "一月",
+        "pos": "noun"
+      },
+      {
+        "es": "verano",
+        "zh": "夏天",
+        "pos": "noun"
+      },
+      {
+        "es": "invierno",
+        "zh": "冬天",
+        "pos": "noun"
+      },
+      {
+        "es": "primavera",
+        "zh": "春天",
+        "pos": "noun"
+      },
+      {
+        "es": "otoño",
+        "zh": "秋天",
+        "pos": "noun"
+      },
+      {
+        "es": "calendario",
+        "zh": "日历",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l11",
+    "title": "现西1 · 第11课 颜色",
+    "bookId": "xiandai_1",
+    "sortOrder": 11,
+    "words": [
+      {
+        "es": "rojo",
+        "zh": "红色的",
+        "pos": "adj"
+      },
+      {
+        "es": "azul",
+        "zh": "蓝色的",
+        "pos": "adj"
+      },
+      {
+        "es": "verde",
+        "zh": "绿色的",
+        "pos": "adj"
+      },
+      {
+        "es": "amarillo",
+        "zh": "黄色的",
+        "pos": "adj"
+      },
+      {
+        "es": "blanco",
+        "zh": "白色的",
+        "pos": "adj"
+      },
+      {
+        "es": "negro",
+        "zh": "黑色的",
+        "pos": "adj"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l12",
+    "title": "现西1 · 第12课 复习与表达",
+    "bookId": "xiandai_1",
+    "sortOrder": 12,
+    "words": [
+      {
+        "es": "repaso",
+        "zh": "复习",
+        "pos": "noun"
+      },
+      {
+        "es": "frase",
+        "zh": "句子",
+        "pos": "noun"
+      },
+      {
+        "es": "palabra",
+        "zh": "单词",
+        "pos": "noun"
+      },
+      {
+        "es": "significado",
+        "zh": "意思",
+        "pos": "noun"
+      },
+      {
+        "es": "traducir",
+        "zh": "翻译",
+        "pos": "verb",
+        "lemma": "traducir"
+      },
+      {
+        "es": "ejemplo",
+        "zh": "例子",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l13",
+    "title": "现西1 · 第13课 estar与位置",
+    "bookId": "xiandai_1",
+    "sortOrder": 13,
+    "words": [
+      {
+        "es": "estar",
+        "zh": "在（状态/位置）",
+        "pos": "verb",
+        "lemma": "estar"
+      },
+      {
+        "es": "aquí",
+        "zh": "这里",
+        "pos": "adv"
+      },
+      {
+        "es": "allí",
+        "zh": "那里",
+        "pos": "adv"
+      },
+      {
+        "es": "cerca",
+        "zh": "近",
+        "pos": "adv"
+      },
+      {
+        "es": "lejos",
+        "zh": "远",
+        "pos": "adv"
+      },
+      {
+        "es": "sitio",
+        "zh": "地方",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l14",
+    "title": "现西1 · 第14课 疑问词",
+    "bookId": "xiandai_1",
+    "sortOrder": 14,
+    "words": [
+      {
+        "es": "qué",
+        "zh": "什么",
+        "pos": "noun"
+      },
+      {
+        "es": "quién",
+        "zh": "谁",
+        "pos": "noun"
+      },
+      {
+        "es": "dónde",
+        "zh": "哪里",
+        "pos": "adv"
+      },
+      {
+        "es": "cuándo",
+        "zh": "什么时候",
+        "pos": "adv"
+      },
+      {
+        "es": "cómo",
+        "zh": "怎样",
+        "pos": "adv"
+      },
+      {
+        "es": "por qué",
+        "zh": "为什么",
+        "pos": "phrase"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l15",
+    "title": "现西1 · 第15课 食物",
+    "bookId": "xiandai_1",
+    "sortOrder": 15,
+    "words": [
+      {
+        "es": "comida",
+        "zh": "食物；餐",
+        "pos": "noun"
+      },
+      {
+        "es": "pan",
+        "zh": "面包",
+        "pos": "noun"
+      },
+      {
+        "es": "leche",
+        "zh": "牛奶",
+        "pos": "noun"
+      },
+      {
+        "es": "huevo",
+        "zh": "鸡蛋",
+        "pos": "noun"
+      },
+      {
+        "es": "carne",
+        "zh": "肉",
+        "pos": "noun"
+      },
+      {
+        "es": "fruta",
+        "zh": "水果",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l16",
+    "title": "现西1 · 第16课 饮料与餐桌",
+    "bookId": "xiandai_1",
+    "sortOrder": 16,
+    "words": [
+      {
+        "es": "agua mineral",
+        "zh": "矿泉水",
+        "pos": "phrase"
+      },
+      {
+        "es": "café",
+        "zh": "咖啡",
+        "pos": "noun"
+      },
+      {
+        "es": "té",
+        "zh": "茶",
+        "pos": "noun"
+      },
+      {
+        "es": "vino",
+        "zh": "葡萄酒",
+        "pos": "noun"
+      },
+      {
+        "es": "cuenta",
+        "zh": "账单",
+        "pos": "noun",
+        "note": "La cuenta, por favor."
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l17",
+    "title": "现西1 · 第17课 出行",
+    "bookId": "xiandai_1",
+    "sortOrder": 17,
+    "words": [
+      {
+        "es": "coche",
+        "zh": "汽车",
+        "pos": "noun"
+      },
+      {
+        "es": "autobús",
+        "zh": "公共汽车",
+        "pos": "noun"
+      },
+      {
+        "es": "tren",
+        "zh": "火车",
+        "pos": "noun"
+      },
+      {
+        "es": "aeropuerto",
+        "zh": "机场",
+        "pos": "noun"
+      },
+      {
+        "es": "billete",
+        "zh": "票",
+        "pos": "noun"
+      },
+      {
+        "es": "llegar",
+        "zh": "到达",
+        "pos": "verb",
+        "lemma": "llegar"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l18",
+    "title": "现西1 · 第18课 身体",
+    "bookId": "xiandai_1",
+    "sortOrder": 18,
+    "words": [
+      {
+        "es": "cabeza",
+        "zh": "头",
+        "pos": "noun"
+      },
+      {
+        "es": "mano",
+        "zh": "手",
+        "pos": "noun"
+      },
+      {
+        "es": "pie",
+        "zh": "脚",
+        "pos": "noun"
+      },
+      {
+        "es": "ojo",
+        "zh": "眼睛",
+        "pos": "noun"
+      },
+      {
+        "es": "boca",
+        "zh": "嘴",
+        "pos": "noun"
+      },
+      {
+        "es": "dolor",
+        "zh": "疼痛",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l19",
+    "title": "现西1 · 第19课 穿着",
+    "bookId": "xiandai_1",
+    "sortOrder": 19,
+    "words": [
+      {
+        "es": "ropa",
+        "zh": "衣服（总称）",
+        "pos": "noun"
+      },
+      {
+        "es": "camisa",
+        "zh": "衬衫",
+        "pos": "noun"
+      },
+      {
+        "es": "pantalón",
+        "zh": "裤子",
+        "pos": "noun"
+      },
+      {
+        "es": "zapato",
+        "zh": "鞋",
+        "pos": "noun"
+      },
+      {
+        "es": "abrigo",
+        "zh": "大衣",
+        "pos": "noun"
+      },
+      {
+        "es": "llevar",
+        "zh": "穿；携带",
+        "pos": "verb",
+        "lemma": "llevar"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l20",
+    "title": "现西1 · 第20课 天气",
+    "bookId": "xiandai_1",
+    "sortOrder": 20,
+    "words": [
+      {
+        "es": "sol",
+        "zh": "太阳",
+        "pos": "noun"
+      },
+      {
+        "es": "lluvia",
+        "zh": "雨",
+        "pos": "noun"
+      },
+      {
+        "es": "nieve",
+        "zh": "雪",
+        "pos": "noun"
+      },
+      {
+        "es": "viento",
+        "zh": "风",
+        "pos": "noun"
+      },
+      {
+        "es": "nublado",
+        "zh": "多云的",
+        "pos": "adj"
+      },
+      {
+        "es": "hacer",
+        "zh": "做；（天气）是",
+        "pos": "verb",
+        "lemma": "hacer",
+        "note": "Hace calor."
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l21",
+    "title": "现西1 · 第21课 住房",
+    "bookId": "xiandai_1",
+    "sortOrder": 21,
+    "words": [
+      {
+        "es": "cocina",
+        "zh": "厨房",
+        "pos": "noun"
+      },
+      {
+        "es": "baño",
+        "zh": "浴室",
+        "pos": "noun"
+      },
+      {
+        "es": "salón",
+        "zh": "客厅",
+        "pos": "noun"
+      },
+      {
+        "es": "silla",
+        "zh": "椅子",
+        "pos": "noun"
+      },
+      {
+        "es": "cama",
+        "zh": "床",
+        "pos": "noun"
+      },
+      {
+        "es": "lámpara",
+        "zh": "灯",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l22",
+    "title": "现西1 · 第22课 购物与服务",
+    "bookId": "xiandai_1",
+    "sortOrder": 22,
+    "words": [
+      {
+        "es": "tienda",
+        "zh": "商店",
+        "pos": "noun"
+      },
+      {
+        "es": "talla",
+        "zh": "尺码",
+        "pos": "noun"
+      },
+      {
+        "es": "oferta",
+        "zh": "特价",
+        "pos": "noun"
+      },
+      {
+        "es": "devolver",
+        "zh": "退还",
+        "pos": "verb",
+        "lemma": "devolver"
+      },
+      {
+        "es": "cajero",
+        "zh": "收银员",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l23",
+    "title": "现西1 · 第23课 电话与邮寄",
+    "bookId": "xiandai_1",
+    "sortOrder": 23,
+    "words": [
+      {
+        "es": "teléfono",
+        "zh": "电话",
+        "pos": "noun"
+      },
+      {
+        "es": "mensaje",
+        "zh": "消息",
+        "pos": "noun"
+      },
+      {
+        "es": "correo",
+        "zh": "邮件；邮局",
+        "pos": "noun"
+      },
+      {
+        "es": "enviar",
+        "zh": "寄出",
+        "pos": "verb",
+        "lemma": "enviar"
+      },
+      {
+        "es": "llamar",
+        "zh": "打电话；叫",
+        "pos": "verb",
+        "lemma": "llamar"
+      }
+    ]
+  },
+  {
+    "unitId": "xiandai.1.l24",
+    "title": "现西1 · 第24课 综合表达",
+    "bookId": "xiandai_1",
+    "sortOrder": 24,
+    "words": [
+      {
+        "es": "resumen",
+        "zh": "摘要",
+        "pos": "noun"
+      },
+      {
+        "es": "objetivo",
+        "zh": "目标",
+        "pos": "noun"
+      },
+      {
+        "es": "progreso",
+        "zh": "进步",
+        "pos": "noun"
+      },
+      {
+        "es": "esfuerzo",
+        "zh": "努力",
+        "pos": "noun"
+      },
+      {
+        "es": "éxito",
+        "zh": "成功",
+        "pos": "noun"
+      },
+      {
+        "es": "seguir",
+        "zh": "继续；跟随",
+        "pos": "verb",
+        "lemma": "seguir"
+      }
+    ]
+  }
+]

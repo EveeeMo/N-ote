@@ -1,0 +1,103 @@
+abordar|着手处理；登上|verb|abordar
+alcance|范围；达到|noun
+ámbito|领域；范围|noun
+asumir|承担；假设|verb|asumir
+avance|进展|noun
+criterio|标准；判断|noun
+destacar|强调；突出|verb|destacar
+enfoque|视角；对焦|noun
+evaluación|评估|noun
+frecuente|频繁的|adj
+hipótesis|假设|noun
+implicar|意味着；牵连|verb|implicar
+innovación|创新|noun
+interpretar|解释；演奏|verb|interpretar
+justificar|辩解；对齐|verb|justificar
+mediante|通过；借助|prep
+paradigma|范式|noun
+perspectiva|视角；前景|noun
+plantear|提出|verb|plantear
+prioridad|优先|noun
+relevante|相关的；重要的|adj
+suponer|意味着；假设|verb|suponer
+sustentar|支撑；维持|verb|sustentar
+tendencia|趋势|noun
+viable|可行的|adj
+viabilidad|可行性|noun
+vincular|联系|verb|vincular
+contexto|语境；背景|noun
+dimensión|维度|noun
+sustentabilidad|可持续性|noun
+la hipótesis|假设|noun
+el análisis|分析|noun
+analizar|分析|verb|analizar
+la conclusión|结论|noun
+concluir|得出结论|verb|concluir
+el argumento|论点|noun
+argumentar|论证|verb|argumentar
+la evidencia|证据|noun
+demostrar|证明|verb|demostrar
+refutar|反驳|verb|refutar
+la crítica|批评|noun
+criticar|批评|verb|criticar
+la opinión|意见|noun
+el punto de vista|观点|phrase
+en cambio|相反|phrase
+por tanto|因此|phrase
+en consecuencia|因此|phrase
+no obstante|尽管如此|phrase
+a pesar de|尽管|prep
+en relación con|关于|phrase
+en cuanto a|至于|phrase
+la tendencia|趋势|noun
+aumentar|增加|verb|aumentar
+disminuir|减少|verb|disminuir
+reducir|减少|verb|reducir
+mantener|保持|verb|mantener
+la variación|变化|noun
+el impacto|影响|noun
+influir|影响|verb|influir
+afectar|影响|verb|afectar
+la consecuencia|后果|noun
+el beneficio|好处|noun
+el perjuicio|损害|noun
+el desarrollo|发展|noun
+desarrollar|发展|verb|desarrollar
+el avance|进步|noun
+el retroceso|倒退|noun
+la innovación|创新|noun
+la sostenibilidad|可持续性|noun
+el medio ambiente|环境|noun
+contaminar|污染|verb|contaminar
+la contaminación|污染|noun
+reciclar|回收|verb|reciclar
+el consumo|消费|noun
+consumir|消费|verb|consumir
+la economía|经济|noun
+el mercado laboral|劳动力市场|phrase
+el desempleo|失业|noun
+contratar|雇用|verb|contratar
+despedir|解雇|verb|despedir
+la huelga|罢工|noun
+sindicato|工会|noun
+la negociación|谈判|noun
+alcanzar|达到|verb|alcanzar
+el objetivo|目标|noun
+priorizar|优先考虑|verb|priorizar
+la prioridad|优先|noun
+evaluar|评估|verb|evaluar
+la evaluación|评估|noun
+el criterio|标准|noun
+objetivo|客观的|adj
+subjetivo|主观的|adj
+la eficacia|功效|noun
+la eficiencia|效率|noun
+implementar|实施|verb|implementar
+el proyecto|项目|noun
+presupuesto|预算|noun
+el informe|报告|noun
+el resumen|摘要|noun
+destacar|强调|verb|destacar
+subrayar|强调|verb|subrayar
+mencionar|提及|verb|mencionar
+omitir|省略|verb|omitir

@@ -1,0 +1,13 @@
+以下内容可放入 App「关于」或 DELE 词库说明（请按实际采用的数据源删减）：
+
+---
+本应用 DELE 等级词表为基于 CEFR 理念汇编的学习用词表，并非 Instituto Cervantes
+官方发布的 DELE 考纲全文。
+
+词频与词条部分使用了以开放许可发布的社区数据（例如基于 Wiktionary、
+Tatoeba、词频统计项目等），版权归原作者所有；详见各数据源的许可证。
+
+感谢以下项目与社区（示例，请按 build_cefr_dele_words.py 实际使用的文件填写）：
+• FrequencyWords / hermitdave（词频相关数据，CC-BY-SA 等，以原仓库为准）
+• doozan/spanish_data（数据处理与词典构建，以原仓库 LICENSE 为准）
+---

@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200000000000000000000001 /* MemorizeSpanishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000001 /* MemorizeSpanishApp.swift */; };
+		20000000000000000000003B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000003B /* AppDelegate.swift */; };
+		200000000000000000000002 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000002 /* MainTabView.swift */; };
+		200000000000000000000003 /* BundledUnitDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000003 /* BundledUnitDTO.swift */; };
+		200000000000000000000004 /* TextbookUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000004 /* TextbookUnit.swift */; };
+		200000000000000000000005 /* WordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000005 /* WordEntry.swift */; };
+		200000000000000000000006 /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000006 /* ReviewItem.swift */; };
+		200000000000000000000007 /* SeedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000007 /* SeedDataService.swift */; };
+		200000000000000000000008 /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000008 /* ImportService.swift */; };
+		200000000000000000000009 /* SRSScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000009 /* SRSScheduler.swift */; };
+		20000000000000000000000A /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000A /* TranslationService.swift */; };
+		20000000000000000000000B /* ConjugationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000B /* ConjugationService.swift */; };
+		20000000000000000000000C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000C /* NotificationService.swift */; };
+		20000000000000000000000D /* StudyQueueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000D /* StudyQueueService.swift */; };
+		20000000000000000000000E /* Date+AppToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000E /* Date+AppToday.swift */; };
+		20000000000000000000000F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000F /* LibraryView.swift */; };
+		200000000000000000000011 /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000011 /* AddWordView.swift */; };
+		200000000000000000000012 /* EditWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000012 /* EditWordView.swift */; };
+		200000000000000000000013 /* StudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000013 /* StudyView.swift */; };
+		200000000000000000000014 /* StudySessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000014 /* StudySessionView.swift */; };
+		200000000000000000000015 /* VerbConjugationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000015 /* VerbConjugationSheet.swift */; };
+		200000000000000000000016 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000016 /* SettingsView.swift */; };
+		200000000000000000000017 /* DebugMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000017 /* DebugMenuView.swift */; };
+		200000000000000000000018 /* SpanishPOSInference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001B /* SpanishPOSInference.swift */; };
+		200000000000000000000019 /* BuiltinTextbookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001C /* BuiltinTextbookService.swift */; };
+		20000000000000000000001A /* BuiltinTextbookPickerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001D /* BuiltinTextbookPickerViews.swift */; };
+		20000000000000000000001B /* DedupeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000021 /* DedupeService.swift */; };
+		20000000000000000000001C /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000022 /* ImportView.swift */; };
+		20000000000000000000001D /* DataRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000023 /* DataRefresh.swift */; };
+		20000000000000000000001F /* SpanishSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000025 /* SpanishSpeechService.swift */; };
+		200000000000000000000020 /* LearningPlanProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002B /* LearningPlanProgress.swift */; };
+		200000000000000000000021 /* LearningPlanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002C /* LearningPlanService.swift */; };
+		200000000000000000000022 /* DELELearningPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002D /* DELELearningPlanView.swift */; };
+		200000000000000000000023 /* NewWordsGroupSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002E /* NewWordsGroupSessionView.swift */; };
+		20000000000000000000002F /* DELEPackStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002F /* DELEPackStorage.swift */; };
+		200000000000000000000030 /* DELERemoteURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000030 /* DELERemoteURLs.swift */; };
+		200000000000000000000031 /* DELEPacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000031 /* DELEPacksView.swift */; };
+		200000000000000000000034 /* LibraryBackupSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000034 /* LibraryBackupSnapshot.swift */; };
+		200000000000000000000035 /* LibraryBackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000035 /* LibraryBackupService.swift */; };
+		200000000000000000000036 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000036 /* KeychainStore.swift */; };
+		200000000000000000000037 /* AppleAccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000037 /* AppleAccountManager.swift */; };
+		200000000000000000000038 /* TesterAccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000038 /* TesterAccessService.swift */; };
+		20000000000000000000003A /* DeskSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000039 /* DeskSyncService.swift */; };
+		20000000000000000000003C /* DeskSyncBackgroundScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000003C /* DeskSyncBackgroundScheduler.swift */; };
+		300000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000018 /* Assets.xcassets */; };
+		300000000000000000000002 /* units.json in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000019 /* units.json */; };
+		300000000000000000000003 /* irregular_verbs.json in Resources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001A /* irregular_verbs.json */; };
+		300000000000000000000004 /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001E /* catalog.json */; };
+		300000000000000000000005 /* builtin_suena_a1.json in Resources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000001F /* builtin_suena_a1.json */; };
+		300000000000000000000006 /* builtin_xiandai_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000020 /* builtin_xiandai_1.json */; };
+		300000000000000000000007 /* dele_catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000026 /* dele_catalog.json */; };
+		300000000000000000000008 /* dele_a1.json in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000027 /* dele_a1.json */; };
+		300000000000000000000009 /* dele_a2.json in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000028 /* dele_a2.json */; };
+		30000000000000000000000A /* dele_b1.json in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000029 /* dele_b1.json */; };
+		30000000000000000000000B /* dele_b2.json in Resources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000002A /* dele_b2.json */; };
+		30000000000000000000000C /* dele_remote_urls.json in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000033 /* dele_remote_urls.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000001 /* MemorizeSpanishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeSpanishApp.swift; sourceTree = "<group>"; };
+		10000000000000000000003B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		100000000000000000000002 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		100000000000000000000003 /* BundledUnitDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundledUnitDTO.swift; sourceTree = "<group>"; };
+		100000000000000000000004 /* TextbookUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookUnit.swift; sourceTree = "<group>"; };
+		100000000000000000000005 /* WordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntry.swift; sourceTree = "<group>"; };
+		100000000000000000000006 /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
+		100000000000000000000007 /* SeedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedDataService.swift; sourceTree = "<group>"; };
+		100000000000000000000008 /* ImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportService.swift; sourceTree = "<group>"; };
+		100000000000000000000009 /* SRSScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSScheduler.swift; sourceTree = "<group>"; };
+		10000000000000000000000A /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		10000000000000000000000B /* ConjugationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConjugationService.swift; sourceTree = "<group>"; };
+		10000000000000000000000C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		10000000000000000000000D /* StudyQueueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyQueueService.swift; sourceTree = "<group>"; };
+		10000000000000000000000E /* Date+AppToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+AppToday.swift"; sourceTree = "<group>"; };
+		10000000000000000000000F /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		100000000000000000000011 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
+		100000000000000000000012 /* EditWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWordView.swift; sourceTree = "<group>"; };
+		100000000000000000000013 /* StudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyView.swift; sourceTree = "<group>"; };
+		100000000000000000000014 /* StudySessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySessionView.swift; sourceTree = "<group>"; };
+		100000000000000000000015 /* VerbConjugationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbConjugationSheet.swift; sourceTree = "<group>"; };
+		100000000000000000000016 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		100000000000000000000017 /* DebugMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMenuView.swift; sourceTree = "<group>"; };
+		100000000000000000000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		100000000000000000000019 /* units.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = units.json; sourceTree = "<group>"; };
+		10000000000000000000001A /* irregular_verbs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = irregular_verbs.json; sourceTree = "<group>"; };
+		10000000000000000000001B /* SpanishPOSInference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishPOSInference.swift; sourceTree = "<group>"; };
+		10000000000000000000001C /* BuiltinTextbookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltinTextbookService.swift; sourceTree = "<group>"; };
+		10000000000000000000001D /* BuiltinTextbookPickerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltinTextbookPickerViews.swift; sourceTree = "<group>"; };
+		10000000000000000000001E /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
+		10000000000000000000001F /* builtin_suena_a1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = builtin_suena_a1.json; sourceTree = "<group>"; };
+		100000000000000000000020 /* builtin_xiandai_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = builtin_xiandai_1.json; sourceTree = "<group>"; };
+		100000000000000000000021 /* DedupeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DedupeService.swift; sourceTree = "<group>"; };
+		100000000000000000000022 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		100000000000000000000023 /* DataRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRefresh.swift; sourceTree = "<group>"; };
+		100000000000000000000025 /* SpanishSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpanishSpeechService.swift; sourceTree = "<group>"; };
+		100000000000000000000026 /* dele_catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dele_catalog.json; sourceTree = "<group>"; };
+		100000000000000000000027 /* dele_a1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dele_a1.json; sourceTree = "<group>"; };
+		100000000000000000000028 /* dele_a2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dele_a2.json; sourceTree = "<group>"; };
+		100000000000000000000029 /* dele_b1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dele_b1.json; sourceTree = "<group>"; };
+		10000000000000000000002A /* dele_b2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dele_b2.json; sourceTree = "<group>"; };
+		10000000000000000000002B /* LearningPlanProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPlanProgress.swift; sourceTree = "<group>"; };
+		10000000000000000000002C /* LearningPlanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPlanService.swift; sourceTree = "<group>"; };
+		10000000000000000000002D /* DELELearningPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELELearningPlanView.swift; sourceTree = "<group>"; };
+		10000000000000000000002E /* NewWordsGroupSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordsGroupSessionView.swift; sourceTree = "<group>"; };
+		10000000000000000000002F /* DELEPackStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELEPackStorage.swift; sourceTree = "<group>"; };
+		100000000000000000000030 /* DELERemoteURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELERemoteURLs.swift; sourceTree = "<group>"; };
+		100000000000000000000031 /* DELEPacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELEPacksView.swift; sourceTree = "<group>"; };
+		100000000000000000000033 /* dele_remote_urls.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dele_remote_urls.json; sourceTree = "<group>"; };
+		100000000000000000000034 /* LibraryBackupSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryBackupSnapshot.swift; sourceTree = "<group>"; };
+		100000000000000000000035 /* LibraryBackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryBackupService.swift; sourceTree = "<group>"; };
+		100000000000000000000036 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		100000000000000000000037 /* AppleAccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountManager.swift; sourceTree = "<group>"; };
+		100000000000000000000038 /* TesterAccessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterAccessService.swift; sourceTree = "<group>"; };
+		100000000000000000000039 /* DeskSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskSyncService.swift; sourceTree = "<group>"; };
+		10000000000000000000003C /* DeskSyncBackgroundScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskSyncBackgroundScheduler.swift; sourceTree = "<group>"; };
+		10000000000000000000003A /* SupportingMergeInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SupportingMergeInfo.plist; sourceTree = "<group>"; };
+		400000000000000000000001 /* MemorizeSpanish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorizeSpanish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		500000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		600000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				600000000000000000000002 /* MemorizeSpanish */,
+				600000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		600000000000000000000002 /* MemorizeSpanish */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000001 /* MemorizeSpanishApp.swift */,
+				10000000000000000000003B /* AppDelegate.swift */,
+				10000000000000000000003A /* SupportingMergeInfo.plist */,
+				100000000000000000000002 /* MainTabView.swift */,
+				600000000000000000000010 /* Models */,
+				600000000000000000000011 /* Services */,
+				600000000000000000000012 /* Utilities */,
+				600000000000000000000013 /* Features */,
+				600000000000000000000014 /* Resources */,
+				100000000000000000000018 /* Assets.xcassets */,
+			);
+			path = MemorizeSpanish;
+			sourceTree = "<group>";
+		};
+		600000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000001 /* MemorizeSpanish.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		600000000000000000000010 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000003 /* BundledUnitDTO.swift */,
+				100000000000000000000004 /* TextbookUnit.swift */,
+				100000000000000000000005 /* WordEntry.swift */,
+				100000000000000000000006 /* ReviewItem.swift */,
+				10000000000000000000002B /* LearningPlanProgress.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		600000000000000000000011 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000007 /* SeedDataService.swift */,
+				100000000000000000000008 /* ImportService.swift */,
+				100000000000000000000034 /* LibraryBackupSnapshot.swift */,
+				100000000000000000000035 /* LibraryBackupService.swift */,
+				100000000000000000000037 /* AppleAccountManager.swift */,
+				100000000000000000000038 /* TesterAccessService.swift */,
+				100000000000000000000039 /* DeskSyncService.swift */,
+				10000000000000000000003C /* DeskSyncBackgroundScheduler.swift */,
+				100000000000000000000021 /* DedupeService.swift */,
+				100000000000000000000009 /* SRSScheduler.swift */,
+				10000000000000000000000A /* TranslationService.swift */,
+				10000000000000000000000B /* ConjugationService.swift */,
+				10000000000000000000000C /* NotificationService.swift */,
+				100000000000000000000025 /* SpanishSpeechService.swift */,
+				10000000000000000000000D /* StudyQueueService.swift */,
+				10000000000000000000001C /* BuiltinTextbookService.swift */,
+				10000000000000000000002C /* LearningPlanService.swift */,
+				10000000000000000000002F /* DELEPackStorage.swift */,
+				100000000000000000000030 /* DELERemoteURLs.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		600000000000000000000012 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000000E /* Date+AppToday.swift */,
+				100000000000000000000023 /* DataRefresh.swift */,
+				100000000000000000000036 /* KeychainStore.swift */,
+				10000000000000000000001B /* SpanishPOSInference.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		600000000000000000000013 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				600000000000000000000015 /* Library */,
+				600000000000000000000022 /* Import */,
+				600000000000000000000016 /* Study */,
+				600000000000000000000017 /* Settings */,
+				600000000000000000000018 /* Debug */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		600000000000000000000014 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000001A /* irregular_verbs.json */,
+				600000000000000000000019 /* BundledUnits */,
+				600000000000000000000020 /* BuiltinBooks */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		600000000000000000000015 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000000F /* LibraryView.swift */,
+				100000000000000000000011 /* AddWordView.swift */,
+				100000000000000000000012 /* EditWordView.swift */,
+				10000000000000000000001D /* BuiltinTextbookPickerViews.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		600000000000000000000016 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000013 /* StudyView.swift */,
+				100000000000000000000014 /* StudySessionView.swift */,
+				100000000000000000000015 /* VerbConjugationSheet.swift */,
+				10000000000000000000002D /* DELELearningPlanView.swift */,
+				10000000000000000000002E /* NewWordsGroupSessionView.swift */,
+				100000000000000000000031 /* DELEPacksView.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		600000000000000000000017 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000016 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		600000000000000000000018 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000017 /* DebugMenuView.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		600000000000000000000019 /* BundledUnits */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000019 /* units.json */,
+			);
+			path = BundledUnits;
+			sourceTree = "<group>";
+		};
+		600000000000000000000020 /* BuiltinBooks */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000001E /* catalog.json */,
+				100000000000000000000026 /* dele_catalog.json */,
+				100000000000000000000027 /* dele_a1.json */,
+				100000000000000000000028 /* dele_a2.json */,
+				100000000000000000000029 /* dele_b1.json */,
+				10000000000000000000002A /* dele_b2.json */,
+				100000000000000000000033 /* dele_remote_urls.json */,
+				10000000000000000000001F /* builtin_suena_a1.json */,
+				100000000000000000000020 /* builtin_xiandai_1.json */,
+			);
+			path = BuiltinBooks;
+			sourceTree = "<group>";
+		};
+		600000000000000000000022 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000022 /* ImportView.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		700000000000000000000001 /* MemorizeSpanish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000002 /* Build configuration list for PBXNativeTarget "MemorizeSpanish" */;
+			buildPhases = (
+				700000000000000000000002 /* Sources */,
+				500000000000000000000001 /* Frameworks */,
+				700000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemorizeSpanish;
+			productName = MemorizeSpanish;
+			productReference = 400000000000000000000001 /* MemorizeSpanish.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		700000000000000000000004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					700000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 800000000000000000000001 /* Build configuration list for PBXProject "MemorizeSpanish" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 600000000000000000000001;
+			productRefGroup = 600000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				700000000000000000000001 /* MemorizeSpanish */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		700000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300000000000000000000001 /* Assets.xcassets in Resources */,
+				300000000000000000000002 /* units.json in Resources */,
+				300000000000000000000003 /* irregular_verbs.json in Resources */,
+				300000000000000000000004 /* catalog.json in Resources */,
+				300000000000000000000005 /* builtin_suena_a1.json in Resources */,
+				300000000000000000000006 /* builtin_xiandai_1.json in Resources */,
+				300000000000000000000007 /* dele_catalog.json in Resources */,
+				300000000000000000000008 /* dele_a1.json in Resources */,
+				300000000000000000000009 /* dele_a2.json in Resources */,
+				30000000000000000000000A /* dele_b1.json in Resources */,
+				30000000000000000000000B /* dele_b2.json in Resources */,
+				30000000000000000000000C /* dele_remote_urls.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		700000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200000000000000000000001 /* MemorizeSpanishApp.swift in Sources */,
+				20000000000000000000003B /* AppDelegate.swift in Sources */,
+				200000000000000000000002 /* MainTabView.swift in Sources */,
+				200000000000000000000003 /* BundledUnitDTO.swift in Sources */,
+				200000000000000000000004 /* TextbookUnit.swift in Sources */,
+				200000000000000000000005 /* WordEntry.swift in Sources */,
+				200000000000000000000006 /* ReviewItem.swift in Sources */,
+				200000000000000000000020 /* LearningPlanProgress.swift in Sources */,
+				200000000000000000000007 /* SeedDataService.swift in Sources */,
+				200000000000000000000008 /* ImportService.swift in Sources */,
+				200000000000000000000034 /* LibraryBackupSnapshot.swift in Sources */,
+				200000000000000000000035 /* LibraryBackupService.swift in Sources */,
+				200000000000000000000037 /* AppleAccountManager.swift in Sources */,
+				200000000000000000000038 /* TesterAccessService.swift in Sources */,
+				20000000000000000000003A /* DeskSyncService.swift in Sources */,
+				20000000000000000000003C /* DeskSyncBackgroundScheduler.swift in Sources */,
+				20000000000000000000001B /* DedupeService.swift in Sources */,
+				200000000000000000000009 /* SRSScheduler.swift in Sources */,
+				20000000000000000000000A /* TranslationService.swift in Sources */,
+				20000000000000000000000B /* ConjugationService.swift in Sources */,
+				20000000000000000000000C /* NotificationService.swift in Sources */,
+				20000000000000000000001F /* SpanishSpeechService.swift in Sources */,
+				20000000000000000000000D /* StudyQueueService.swift in Sources */,
+				200000000000000000000019 /* BuiltinTextbookService.swift in Sources */,
+				200000000000000000000021 /* LearningPlanService.swift in Sources */,
+				20000000000000000000000E /* Date+AppToday.swift in Sources */,
+				20000000000000000000001D /* DataRefresh.swift in Sources */,
+				200000000000000000000036 /* KeychainStore.swift in Sources */,
+				200000000000000000000018 /* SpanishPOSInference.swift in Sources */,
+				20000000000000000000000F /* LibraryView.swift in Sources */,
+				20000000000000000000001A /* BuiltinTextbookPickerViews.swift in Sources */,
+				200000000000000000000011 /* AddWordView.swift in Sources */,
+				200000000000000000000012 /* EditWordView.swift in Sources */,
+				200000000000000000000013 /* StudyView.swift in Sources */,
+				200000000000000000000014 /* StudySessionView.swift in Sources */,
+				200000000000000000000022 /* DELELearningPlanView.swift in Sources */,
+				200000000000000000000023 /* NewWordsGroupSessionView.swift in Sources */,
+				20000000000000000000002F /* DELEPackStorage.swift in Sources */,
+				200000000000000000000030 /* DELERemoteURLs.swift in Sources */,
+				200000000000000000000031 /* DELEPacksView.swift in Sources */,
+				200000000000000000000015 /* VerbConjugationSheet.swift in Sources */,
+				200000000000000000000016 /* SettingsView.swift in Sources */,
+				200000000000000000000017 /* DebugMenuView.swift in Sources */,
+				20000000000000000000001C /* ImportView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		900000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		900000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		900000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8KBRX554VF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MemorizeSpanish/SupportingMergeInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ñote";
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "用于在设定时间提醒你复习单词。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eve.memorizespanish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		900000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8KBRX554VF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MemorizeSpanish/SupportingMergeInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ñote";
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "用于在设定时间提醒你复习单词。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eve.memorizespanish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800000000000000000000001 /* Build configuration list for PBXProject "MemorizeSpanish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900000000000000000000001 /* Debug */,
+				900000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800000000000000000000002 /* Build configuration list for PBXNativeTarget "MemorizeSpanish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900000000000000000000003 /* Debug */,
+				900000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 700000000000000000000004 /* Project object */;
+}

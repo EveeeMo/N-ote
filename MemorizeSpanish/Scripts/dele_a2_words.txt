@@ -1,0 +1,123 @@
+acuerdo|协议；一致|noun
+aunque|虽然；尽管|conj
+consejo|建议|noun
+decidir|决定|verb|decidir
+desarrollo|发展|noun
+empleo|就业；工作|noun
+encargarse|负责|verb|encargarse
+esfuerzo|努力|noun
+experiencia|经验；经历|noun
+formación|培训；形成|noun
+gastar|花费|verb|gastar
+gasto|开支|noun
+habitual|通常的|adj
+incluso|甚至|adv
+independiente|独立的|adj
+informe|报告|noun
+mantener|保持|verb|mantener
+matrícula|注册；学费|noun
+mejorar|改善|verb|mejorar
+objetivo|目标|noun
+ofrecer|提供|verb|ofrecer
+oportunidad|机会|noun
+organizar|组织|verb|organizar
+participar|参加|verb|participar
+permiso|许可|noun
+plazo|期限|noun
+preparar|准备|verb|preparar
+presupuesto|预算|noun
+próximo|下一个；即将|adj
+reunión|会议|noun
+el acuerdo|协议|noun
+la costumbre|习惯|noun
+el hábito|习惯|noun
+la costumbre|风俗|noun
+el consejo|建议|noun
+aconsejar|建议|verb|aconsejar
+sugerir|暗示；建议|verb|sugerir
+la sugerencia|建议|noun
+el problema|问题|noun
+la solución|解决办法|noun
+resolver|解决|verb|resolver
+mejorar|改善|verb|mejorar
+empeorar|变坏|verb|empeorar
+el éxito|成功|noun
+el fracaso|失败|noun
+conseguir|获得|verb|conseguir
+lograr|实现|verb|lograr
+intentar|尝试|verb|intentar
+conseguir|设法做到|verb|conseguir
+fallar|失败|verb|fallar
+la oportunidad|机会|noun
+el riesgo|风险|noun
+arriesgar|冒险|verb|arriesgar
+seguro|安全的|adj
+peligroso|危险的|adj
+el peligro|危险|noun
+la seguridad|安全|noun
+cuidado|小心|noun
+cuidar|照顾|verb|cuidar
+proteger|保护|verb|proteger
+el permiso|许可|noun
+prohibido|禁止|adj
+permitir|允许|verb|permitir
+evitar|避免|verb|evitar
+la razón|理由|noun
+la causa|原因|noun
+el resultado|结果|noun
+por eso|所以|phrase
+sin embargo|然而|phrase
+además|此外|adv
+aunque|虽然|conj
+mientras|当…时|conj
+cuando|当…时|conj
+después de|在…之后|prep
+antes de|在…之前|prep
+durante|在…期间|prep
+hasta|直到|prep
+desde|从|prep
+dentro de|在…之内|phrase
+fuera de|在…之外|phrase
+el plazo|期限|noun
+a tiempo|准时|phrase
+tarde|晚|adv
+temprano|早|adv
+puntual|准时的|adj
+la cita|约会|noun
+quedar|约定|verb|quedar
+cancelar|取消|verb|cancelar
+aplazar|推迟|verb|aplazar
+la reunión|会议|noun
+el jefe|老板|noun
+el compañero|同事|noun
+la empresa|公司|noun
+el sueldo|工资|noun
+el contrato|合同|noun
+firmar|签署|verb|firmar
+el horario|时间表|noun
+el turno|班次|noun
+la vacaciones|假期|noun
+descansar|休息|verb|descansar
+el descanso|休息|noun
+preocuparse|担心|verb|preocuparse
+la preocupación|担心|noun
+tranquilo|平静的|adj
+nervioso|紧张的|adj
+el estrés|压力|noun
+relajarse|放松|verb|relajarse
+el ejercicio|锻炼|noun
+hacer ejercicio|锻炼|phrase
+la salud|健康|noun
+enfermo|生病的|adj
+el médico|医生|noun
+la medicina|药|noun
+la receta|处方|noun
+la farmacia|药房|noun
+doler|疼痛|verb|doler
+la tos|咳嗽|noun
+el resfriado|感冒|noun
+la fiebre|发烧|noun
+mejor|更好|adj
+peor|更差|adj
+cansado|累的|adj
+descansado|休息好的|adj

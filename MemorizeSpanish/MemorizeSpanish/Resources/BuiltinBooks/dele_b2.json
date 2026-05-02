@@ -1,0 +1,689 @@
+[
+  {
+    "unitId": "dele_b2.g000",
+    "title": "DELE B2 · 第 1 组",
+    "bookId": "dele_b2",
+    "sortOrder": 0,
+    "words": [
+      {
+        "es": "ambiguo",
+        "zh": "含糊的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "coherencia",
+        "zh": "连贯性",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "connotación",
+        "zh": "内涵；隐含意义",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "disertar",
+        "zh": "论述",
+        "pos": "verb",
+        "note": null,
+        "lemma": "disertar"
+      },
+      {
+        "es": "elucubrar",
+        "zh": "苦思冥想",
+        "pos": "verb",
+        "note": null,
+        "lemma": "elucubrar"
+      },
+      {
+        "es": "epígrafe",
+        "zh": "题记；标题",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "idoneidad",
+        "zh": "适宜性",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "matiz",
+        "zh": "细微差别",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "perplejidad",
+        "zh": "困惑",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "sintetizar",
+        "zh": "综合；概括",
+        "pos": "verb",
+        "note": null,
+        "lemma": "sintetizar"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b2.g001",
+    "title": "DELE B2 · 第 2 组",
+    "bookId": "dele_b2",
+    "sortOrder": 1,
+    "words": [
+      {
+        "es": "subyacer",
+        "zh": "潜在；作为基础",
+        "pos": "verb",
+        "note": null,
+        "lemma": "subyacer"
+      },
+      {
+        "es": "ubicuo",
+        "zh": "无处不在的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "verosimilitud",
+        "zh": "似真性",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "vicisitud",
+        "zh": "变故；沧桑",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "vocación",
+        "zh": "天职；志向",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "zozobra",
+        "zh": "忧虑；（船）倾侧",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "añoranza",
+        "zh": "怀念",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "beneplácito",
+        "zh": "赞同；许可",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "candor",
+        "zh": "天真；坦率",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "dilucidar",
+        "zh": "阐明",
+        "pos": "verb",
+        "note": null,
+        "lemma": "dilucidar"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b2.g002",
+    "title": "DELE B2 · 第 3 组",
+    "bookId": "dele_b2",
+    "sortOrder": 2,
+    "words": [
+      {
+        "es": "efímero",
+        "zh": "短暂的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "fáctica",
+        "zh": "事实的（阴性）",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "hermenéutica",
+        "zh": "诠释学",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "incipiente",
+        "zh": "初始的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "inopia",
+        "zh": "缺乏；无知",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "lacónico",
+        "zh": "简洁的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "magnánimo",
+        "zh": "宽宏的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "nefasto",
+        "zh": "不祥的；有害的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "óbice",
+        "zh": "障碍",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "perentorio",
+        "zh": "紧迫的；终局的",
+        "pos": "adj",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b2.g003",
+    "title": "DELE B2 · 第 4 组",
+    "bookId": "dele_b2",
+    "sortOrder": 3,
+    "words": [
+      {
+        "es": "la disertación",
+        "zh": "论文",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el ensayo",
+        "zh": "随笔",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la tesis",
+        "zh": "论点",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "argumentar",
+        "zh": "论证",
+        "pos": "verb",
+        "note": null,
+        "lemma": "argumentar"
+      },
+      {
+        "es": "matizar",
+        "zh": "使语气缓和",
+        "pos": "verb",
+        "note": null,
+        "lemma": "matizar"
+      },
+      {
+        "es": "sutil",
+        "zh": "微妙的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el matiz",
+        "zh": "细微差别",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la ironía",
+        "zh": "讽刺",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el sarcasmo",
+        "zh": "讽刺",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la ambigüedad",
+        "zh": "歧义",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b2.g004",
+    "title": "DELE B2 · 第 5 组",
+    "bookId": "dele_b2",
+    "sortOrder": 4,
+    "words": [
+      {
+        "es": "ambiguo",
+        "zh": "含糊的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el eufemismo",
+        "zh": "委婉语",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la connotación",
+        "zh": "内涵",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la denotación",
+        "zh": "外延",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el registro",
+        "zh": "语体",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "coloquial",
+        "zh": "口语的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "formal",
+        "zh": "正式的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "la precisión",
+        "zh": "精确",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "lacónico",
+        "zh": "简洁的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el estilo",
+        "zh": "风格",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b2.g005",
+    "title": "DELE B2 · 第 6 组",
+    "bookId": "dele_b2",
+    "sortOrder": 5,
+    "words": [
+      {
+        "es": "el tono",
+        "zh": "语气",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "coherente",
+        "zh": "连贯的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "incoherente",
+        "zh": "不连贯的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "la cohesión",
+        "zh": "衔接",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el conector",
+        "zh": "连接词",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el párrafo",
+        "zh": "段落",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el inciso",
+        "zh": "插入语",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la digresión",
+        "zh": "离题",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "redundante",
+        "zh": "冗余的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el pleonasmo",
+        "zh": "赘述",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b2.g006",
+    "title": "DELE B2 · 第 7 组",
+    "bookId": "dele_b2",
+    "sortOrder": 6,
+    "words": [
+      {
+        "es": "el oxímoron",
+        "zh": "矛盾修辞",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la metáfora",
+        "zh": "隐喻",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el símil",
+        "zh": "明喻",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la analogía",
+        "zh": "类比",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el contraste",
+        "zh": "对比",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el paralelismo",
+        "zh": "排比",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "parodiar",
+        "zh": "戏仿",
+        "pos": "verb",
+        "note": null,
+        "lemma": "parodiar"
+      },
+      {
+        "es": "la parodia",
+        "zh": "戏仿",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la intertextualidad",
+        "zh": "互文性",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la alusión",
+        "zh": "典故",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b2.g007",
+    "title": "DELE B2 · 第 8 组",
+    "bookId": "dele_b2",
+    "sortOrder": 7,
+    "words": [
+      {
+        "es": "el subtexto",
+        "zh": "潜台词",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la polisemia",
+        "zh": "多义性",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la sinonimia",
+        "zh": "同义",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el antónimo",
+        "zh": "反义词",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el campo semántico",
+        "zh": "语义场",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "la pragmática",
+        "zh": "语用学",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el acto de habla",
+        "zh": "言语行为",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "la implicatura",
+        "zh": "含意",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el presupuesto",
+        "zh": "预设",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "inferir",
+        "zh": "推断",
+        "pos": "verb",
+        "note": null,
+        "lemma": "inferir"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b2.g008",
+    "title": "DELE B2 · 第 9 组",
+    "bookId": "dele_b2",
+    "sortOrder": 8,
+    "words": [
+      {
+        "es": "la inferencia",
+        "zh": "推断",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "deducir",
+        "zh": "演绎",
+        "pos": "verb",
+        "note": null,
+        "lemma": "deducir"
+      },
+      {
+        "es": "inducir",
+        "zh": "归纳",
+        "pos": "verb",
+        "note": null,
+        "lemma": "inducir"
+      },
+      {
+        "es": "la deducción",
+        "zh": "演绎",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la inducción",
+        "zh": "归纳",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el razonamiento",
+        "zh": "推理",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el silogismo",
+        "zh": "三段论",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el sofisma",
+        "zh": "诡辩",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "refutar",
+        "zh": "驳斥",
+        "pos": "verb",
+        "note": null,
+        "lemma": "refutar"
+      },
+      {
+        "es": "replicar",
+        "zh": "反驳",
+        "pos": "verb",
+        "note": null,
+        "lemma": "replicar"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b2.g009",
+    "title": "DELE B2 · 第 10 组",
+    "bookId": "dele_b2",
+    "sortOrder": 9,
+    "words": [
+      {
+        "es": "la réplica",
+        "zh": "反驳",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el contraargumento",
+        "zh": "反方论点",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la objeción",
+        "zh": "反对意见",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el sesgo",
+        "zh": "偏见",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "parcial",
+        "zh": "片面的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "imparcial",
+        "zh": "公正的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "la idoneidad",
+        "zh": "适当",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "pertinente",
+        "zh": "相关的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "impertinente",
+        "zh": "不相关的",
+        "pos": "adj",
+        "note": null
+      }
+    ]
+  }
+]

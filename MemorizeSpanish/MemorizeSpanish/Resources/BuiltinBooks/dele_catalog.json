@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "bookId": "dele_a1",
+      "title": "DELE A1",
+      "subtitle": "词库内置；导入页可下载到本机",
+      "bundleFileName": "dele_a1"
+    },
+    {
+      "bookId": "dele_a2",
+      "title": "DELE A2",
+      "subtitle": "词库内置；导入页可下载到本机",
+      "bundleFileName": "dele_a2"
+    },
+    {
+      "bookId": "dele_b1",
+      "title": "DELE B1",
+      "subtitle": "词库内置；导入页可下载到本机",
+      "bundleFileName": "dele_b1"
+    },
+    {
+      "bookId": "dele_b2",
+      "title": "DELE B2",
+      "subtitle": "词库内置；导入页可下载到本机",
+      "bundleFileName": "dele_b2"
+    }
+  ]
+}

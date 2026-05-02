@@ -1,0 +1,16 @@
+后续迭代：Sign in with Apple + iCloud / CloudKit 与 SwiftData 同步（评估备忘）
+
+为何可能要上
+- 多设备自动同步学习进度与词库，减少手动「学习库备份」频率。
+
+主要工程范围（粗估）
+1. Capability：Sign in with Apple；iCloud（CloudKit）。
+2. ModelConfiguration：为 SwiftData 容器启用 CloudKit，容器名与 Developer 后台一致。
+3. 模型约束：CloudKit 对关系、可选类型、数据大小有限制；需逐模型核对 WordEntry / ReviewItem / TextbookUnit / LearningPlanProgress 是否需拆分或去关系化字段。
+4. 冲突：多设备同时复习需定义合并策略（例如按 lastActivityAt、复习状态以较新为准等）。
+5. 首登与迁移：本地已有数据首次开启同步时的上传策略、与匿名本地-only 用户的迁移路径。
+6. 测试：断网、冲突、大库同步时间、删除与恢复。
+
+建议落地顺序
+- 阶段 1（当前）：本地全量导出/导入已提供数据安全基线。
+- 阶段 2：再立项 CloudKit；上线前需补充隐私政策 URL（若采集账户标识符或与云同步相关）。

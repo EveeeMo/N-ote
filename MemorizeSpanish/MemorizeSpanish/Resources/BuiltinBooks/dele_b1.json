@@ -1,0 +1,744 @@
+[
+  {
+    "unitId": "dele_b1.g000",
+    "title": "DELE B1 · 第 1 组",
+    "bookId": "dele_b1",
+    "sortOrder": 0,
+    "words": [
+      {
+        "es": "abordar",
+        "zh": "着手处理；登上",
+        "pos": "verb",
+        "note": null,
+        "lemma": "abordar"
+      },
+      {
+        "es": "alcance",
+        "zh": "范围；达到",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "ámbito",
+        "zh": "领域；范围",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "asumir",
+        "zh": "承担；假设",
+        "pos": "verb",
+        "note": null,
+        "lemma": "asumir"
+      },
+      {
+        "es": "avance",
+        "zh": "进展",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "criterio",
+        "zh": "标准；判断",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "destacar",
+        "zh": "强调；突出",
+        "pos": "verb",
+        "note": null,
+        "lemma": "destacar"
+      },
+      {
+        "es": "enfoque",
+        "zh": "视角；对焦",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "evaluación",
+        "zh": "评估",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "frecuente",
+        "zh": "频繁的",
+        "pos": "adj",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g001",
+    "title": "DELE B1 · 第 2 组",
+    "bookId": "dele_b1",
+    "sortOrder": 1,
+    "words": [
+      {
+        "es": "hipótesis",
+        "zh": "假设",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "implicar",
+        "zh": "意味着；牵连",
+        "pos": "verb",
+        "note": null,
+        "lemma": "implicar"
+      },
+      {
+        "es": "innovación",
+        "zh": "创新",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "interpretar",
+        "zh": "解释；演奏",
+        "pos": "verb",
+        "note": null,
+        "lemma": "interpretar"
+      },
+      {
+        "es": "justificar",
+        "zh": "辩解；对齐",
+        "pos": "verb",
+        "note": null,
+        "lemma": "justificar"
+      },
+      {
+        "es": "mediante",
+        "zh": "通过；借助",
+        "pos": "prep",
+        "note": null
+      },
+      {
+        "es": "paradigma",
+        "zh": "范式",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "perspectiva",
+        "zh": "视角；前景",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "plantear",
+        "zh": "提出",
+        "pos": "verb",
+        "note": null,
+        "lemma": "plantear"
+      },
+      {
+        "es": "prioridad",
+        "zh": "优先",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g002",
+    "title": "DELE B1 · 第 3 组",
+    "bookId": "dele_b1",
+    "sortOrder": 2,
+    "words": [
+      {
+        "es": "relevante",
+        "zh": "相关的；重要的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "suponer",
+        "zh": "意味着；假设",
+        "pos": "verb",
+        "note": null,
+        "lemma": "suponer"
+      },
+      {
+        "es": "sustentar",
+        "zh": "支撑；维持",
+        "pos": "verb",
+        "note": null,
+        "lemma": "sustentar"
+      },
+      {
+        "es": "tendencia",
+        "zh": "趋势",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "viable",
+        "zh": "可行的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "viabilidad",
+        "zh": "可行性",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "vincular",
+        "zh": "联系",
+        "pos": "verb",
+        "note": null,
+        "lemma": "vincular"
+      },
+      {
+        "es": "contexto",
+        "zh": "语境；背景",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "dimensión",
+        "zh": "维度",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "sustentabilidad",
+        "zh": "可持续性",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g003",
+    "title": "DELE B1 · 第 4 组",
+    "bookId": "dele_b1",
+    "sortOrder": 3,
+    "words": [
+      {
+        "es": "la hipótesis",
+        "zh": "假设",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el análisis",
+        "zh": "分析",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "analizar",
+        "zh": "分析",
+        "pos": "verb",
+        "note": null,
+        "lemma": "analizar"
+      },
+      {
+        "es": "la conclusión",
+        "zh": "结论",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "concluir",
+        "zh": "得出结论",
+        "pos": "verb",
+        "note": null,
+        "lemma": "concluir"
+      },
+      {
+        "es": "el argumento",
+        "zh": "论点",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "argumentar",
+        "zh": "论证",
+        "pos": "verb",
+        "note": null,
+        "lemma": "argumentar"
+      },
+      {
+        "es": "la evidencia",
+        "zh": "证据",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "demostrar",
+        "zh": "证明",
+        "pos": "verb",
+        "note": null,
+        "lemma": "demostrar"
+      },
+      {
+        "es": "refutar",
+        "zh": "反驳",
+        "pos": "verb",
+        "note": null,
+        "lemma": "refutar"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g004",
+    "title": "DELE B1 · 第 5 组",
+    "bookId": "dele_b1",
+    "sortOrder": 4,
+    "words": [
+      {
+        "es": "la crítica",
+        "zh": "批评",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "criticar",
+        "zh": "批评",
+        "pos": "verb",
+        "note": null,
+        "lemma": "criticar"
+      },
+      {
+        "es": "la opinión",
+        "zh": "意见",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el punto de vista",
+        "zh": "观点",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "en cambio",
+        "zh": "相反",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "por tanto",
+        "zh": "因此",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "en consecuencia",
+        "zh": "因此",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "no obstante",
+        "zh": "尽管如此",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "a pesar de",
+        "zh": "尽管",
+        "pos": "prep",
+        "note": null
+      },
+      {
+        "es": "en relación con",
+        "zh": "关于",
+        "pos": "phrase",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g005",
+    "title": "DELE B1 · 第 6 组",
+    "bookId": "dele_b1",
+    "sortOrder": 5,
+    "words": [
+      {
+        "es": "en cuanto a",
+        "zh": "至于",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "la tendencia",
+        "zh": "趋势",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "aumentar",
+        "zh": "增加",
+        "pos": "verb",
+        "note": null,
+        "lemma": "aumentar"
+      },
+      {
+        "es": "disminuir",
+        "zh": "减少",
+        "pos": "verb",
+        "note": null,
+        "lemma": "disminuir"
+      },
+      {
+        "es": "reducir",
+        "zh": "减少",
+        "pos": "verb",
+        "note": null,
+        "lemma": "reducir"
+      },
+      {
+        "es": "mantener",
+        "zh": "保持",
+        "pos": "verb",
+        "note": null,
+        "lemma": "mantener"
+      },
+      {
+        "es": "la variación",
+        "zh": "变化",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el impacto",
+        "zh": "影响",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "influir",
+        "zh": "影响",
+        "pos": "verb",
+        "note": null,
+        "lemma": "influir"
+      },
+      {
+        "es": "afectar",
+        "zh": "影响",
+        "pos": "verb",
+        "note": null,
+        "lemma": "afectar"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g006",
+    "title": "DELE B1 · 第 7 组",
+    "bookId": "dele_b1",
+    "sortOrder": 6,
+    "words": [
+      {
+        "es": "la consecuencia",
+        "zh": "后果",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el beneficio",
+        "zh": "好处",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el perjuicio",
+        "zh": "损害",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el desarrollo",
+        "zh": "发展",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "desarrollar",
+        "zh": "发展",
+        "pos": "verb",
+        "note": null,
+        "lemma": "desarrollar"
+      },
+      {
+        "es": "el avance",
+        "zh": "进步",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el retroceso",
+        "zh": "倒退",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la innovación",
+        "zh": "创新",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la sostenibilidad",
+        "zh": "可持续性",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el medio ambiente",
+        "zh": "环境",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g007",
+    "title": "DELE B1 · 第 8 组",
+    "bookId": "dele_b1",
+    "sortOrder": 7,
+    "words": [
+      {
+        "es": "contaminar",
+        "zh": "污染",
+        "pos": "verb",
+        "note": null,
+        "lemma": "contaminar"
+      },
+      {
+        "es": "la contaminación",
+        "zh": "污染",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "reciclar",
+        "zh": "回收",
+        "pos": "verb",
+        "note": null,
+        "lemma": "reciclar"
+      },
+      {
+        "es": "el consumo",
+        "zh": "消费",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "consumir",
+        "zh": "消费",
+        "pos": "verb",
+        "note": null,
+        "lemma": "consumir"
+      },
+      {
+        "es": "la economía",
+        "zh": "经济",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el mercado laboral",
+        "zh": "劳动力市场",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "el desempleo",
+        "zh": "失业",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "contratar",
+        "zh": "雇用",
+        "pos": "verb",
+        "note": null,
+        "lemma": "contratar"
+      },
+      {
+        "es": "despedir",
+        "zh": "解雇",
+        "pos": "verb",
+        "note": null,
+        "lemma": "despedir"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g008",
+    "title": "DELE B1 · 第 9 组",
+    "bookId": "dele_b1",
+    "sortOrder": 8,
+    "words": [
+      {
+        "es": "la huelga",
+        "zh": "罢工",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "sindicato",
+        "zh": "工会",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la negociación",
+        "zh": "谈判",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "alcanzar",
+        "zh": "达到",
+        "pos": "verb",
+        "note": null,
+        "lemma": "alcanzar"
+      },
+      {
+        "es": "el objetivo",
+        "zh": "目标",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "priorizar",
+        "zh": "优先考虑",
+        "pos": "verb",
+        "note": null,
+        "lemma": "priorizar"
+      },
+      {
+        "es": "la prioridad",
+        "zh": "优先",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "evaluar",
+        "zh": "评估",
+        "pos": "verb",
+        "note": null,
+        "lemma": "evaluar"
+      },
+      {
+        "es": "la evaluación",
+        "zh": "评估",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el criterio",
+        "zh": "标准",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g009",
+    "title": "DELE B1 · 第 10 组",
+    "bookId": "dele_b1",
+    "sortOrder": 9,
+    "words": [
+      {
+        "es": "objetivo",
+        "zh": "客观的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "subjetivo",
+        "zh": "主观的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "la eficacia",
+        "zh": "功效",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la eficiencia",
+        "zh": "效率",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "implementar",
+        "zh": "实施",
+        "pos": "verb",
+        "note": null,
+        "lemma": "implementar"
+      },
+      {
+        "es": "el proyecto",
+        "zh": "项目",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "presupuesto",
+        "zh": "预算",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el informe",
+        "zh": "报告",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el resumen",
+        "zh": "摘要",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "destacar",
+        "zh": "强调",
+        "pos": "verb",
+        "note": null,
+        "lemma": "destacar"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_b1.g010",
+    "title": "DELE B1 · 第 11 组",
+    "bookId": "dele_b1",
+    "sortOrder": 10,
+    "words": [
+      {
+        "es": "subrayar",
+        "zh": "强调",
+        "pos": "verb",
+        "note": null,
+        "lemma": "subrayar"
+      },
+      {
+        "es": "mencionar",
+        "zh": "提及",
+        "pos": "verb",
+        "note": null,
+        "lemma": "mencionar"
+      },
+      {
+        "es": "omitir",
+        "zh": "省略",
+        "pos": "verb",
+        "note": null,
+        "lemma": "omitir"
+      }
+    ]
+  }
+]

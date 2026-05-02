@@ -1,0 +1,579 @@
+[
+  {
+    "unitId": "suena.a1.u00",
+    "title": "走西1 · 语音与入门",
+    "bookId": "suena_a1",
+    "sortOrder": 0,
+    "words": [
+      {
+        "es": "hola",
+        "zh": "你好；喂",
+        "pos": "interj",
+        "note": "问候"
+      },
+      {
+        "es": "adiós",
+        "zh": "再见",
+        "pos": "interj"
+      },
+      {
+        "es": "gracias",
+        "zh": "谢谢",
+        "pos": "noun",
+        "note": "常用复数形式表感谢"
+      },
+      {
+        "es": "por favor",
+        "zh": "请；麻烦",
+        "pos": "phrase"
+      },
+      {
+        "es": "sí",
+        "zh": "是；对",
+        "pos": "adv"
+      },
+      {
+        "es": "no",
+        "zh": "不",
+        "pos": "adv"
+      },
+      {
+        "es": "buenos días",
+        "zh": "早上好",
+        "pos": "phrase"
+      },
+      {
+        "es": "buenas tardes",
+        "zh": "下午好",
+        "pos": "phrase"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u01",
+    "title": "走西1 · 我们是谁？",
+    "bookId": "suena_a1",
+    "sortOrder": 1,
+    "words": [
+      {
+        "es": "nombre",
+        "zh": "名字",
+        "pos": "noun",
+        "note": "mi nombre 我的名字"
+      },
+      {
+        "es": "ser",
+        "zh": "是（本质）",
+        "pos": "verb",
+        "lemma": "ser",
+        "note": "Yo soy…"
+      },
+      {
+        "es": "estudiante",
+        "zh": "学生",
+        "pos": "noun",
+        "note": "m./f."
+      },
+      {
+        "es": "profesor",
+        "zh": "男老师",
+        "pos": "noun",
+        "note": "profesora 女老师"
+      },
+      {
+        "es": "amigo",
+        "zh": "男性朋友",
+        "pos": "noun",
+        "note": "amiga"
+      },
+      {
+        "es": "vivir",
+        "zh": "居住；生活",
+        "pos": "verb",
+        "lemma": "vivir",
+        "note": "vivir en Madrid"
+      },
+      {
+        "es": "país",
+        "zh": "国家",
+        "pos": "noun"
+      },
+      {
+        "es": "idioma",
+        "zh": "语言",
+        "pos": "noun"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u02",
+    "title": "走西1 · 我的世界",
+    "bookId": "suena_a1",
+    "sortOrder": 2,
+    "words": [
+      {
+        "es": "familia",
+        "zh": "家庭；家人",
+        "pos": "noun"
+      },
+      {
+        "es": "padre",
+        "zh": "父亲",
+        "pos": "noun"
+      },
+      {
+        "es": "madre",
+        "zh": "母亲",
+        "pos": "noun"
+      },
+      {
+        "es": "hermano",
+        "zh": "兄弟",
+        "pos": "noun",
+        "note": "hermana 姐妹"
+      },
+      {
+        "es": "casa",
+        "zh": "房子；家",
+        "pos": "noun"
+      },
+      {
+        "es": "habitación",
+        "zh": "房间",
+        "pos": "noun"
+      },
+      {
+        "es": "mío",
+        "zh": "我的（东西）",
+        "pos": "adj",
+        "note": "物主代词"
+      },
+      {
+        "es": "tuyo",
+        "zh": "你的（东西）",
+        "pos": "adj"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u03",
+    "title": "走西1 · 我的生活",
+    "bookId": "suena_a1",
+    "sortOrder": 3,
+    "words": [
+      {
+        "es": "día",
+        "zh": "天；白天",
+        "pos": "noun",
+        "note": "buen día"
+      },
+      {
+        "es": "semana",
+        "zh": "星期",
+        "pos": "noun"
+      },
+      {
+        "es": "trabajar",
+        "zh": "工作",
+        "pos": "verb",
+        "lemma": "trabajar"
+      },
+      {
+        "es": "estudiar",
+        "zh": "学习",
+        "pos": "verb",
+        "lemma": "estudiar"
+      },
+      {
+        "es": "descansar",
+        "zh": "休息",
+        "pos": "verb",
+        "lemma": "descansar"
+      },
+      {
+        "es": "libre",
+        "zh": "空闲的",
+        "pos": "adj",
+        "note": "estar libre"
+      },
+      {
+        "es": "ocupado",
+        "zh": "忙的",
+        "pos": "adj"
+      },
+      {
+        "es": "hora",
+        "zh": "小时；钟点",
+        "pos": "noun",
+        "note": "¿Qué hora es?"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u04",
+    "title": "走西1 · 平常事",
+    "bookId": "suena_a1",
+    "sortOrder": 4,
+    "words": [
+      {
+        "es": "levantarse",
+        "zh": "起床",
+        "pos": "verb",
+        "lemma": "levantarse",
+        "note": "代词式动词"
+      },
+      {
+        "es": "desayunar",
+        "zh": "吃早餐",
+        "pos": "verb",
+        "lemma": "desayunar"
+      },
+      {
+        "es": "calle",
+        "zh": "街道",
+        "pos": "noun"
+      },
+      {
+        "es": "comprar",
+        "zh": "买",
+        "pos": "verb",
+        "lemma": "comprar"
+      },
+      {
+        "es": "mercado",
+        "zh": "市场",
+        "pos": "noun"
+      },
+      {
+        "es": "precio",
+        "zh": "价格",
+        "pos": "noun"
+      },
+      {
+        "es": "barato",
+        "zh": "便宜的",
+        "pos": "adj"
+      },
+      {
+        "es": "caro",
+        "zh": "贵的",
+        "pos": "adj"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u05",
+    "title": "走西1 · 开心玩耍",
+    "bookId": "suena_a1",
+    "sortOrder": 5,
+    "words": [
+      {
+        "es": "fiesta",
+        "zh": "聚会；节日",
+        "pos": "noun"
+      },
+      {
+        "es": "música",
+        "zh": "音乐",
+        "pos": "noun"
+      },
+      {
+        "es": "bailar",
+        "zh": "跳舞",
+        "pos": "verb",
+        "lemma": "bailar"
+      },
+      {
+        "es": "cine",
+        "zh": "电影院",
+        "pos": "noun",
+        "note": "ir al cine"
+      },
+      {
+        "es": "viaje",
+        "zh": "旅行",
+        "pos": "noun"
+      },
+      {
+        "es": "playa",
+        "zh": "海滩",
+        "pos": "noun"
+      },
+      {
+        "es": "diversión",
+        "zh": "娱乐；乐趣",
+        "pos": "noun"
+      },
+      {
+        "es": "aburrido",
+        "zh": "无聊的",
+        "pos": "adj"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u06",
+    "title": "走西1 · 我能……吗？",
+    "bookId": "suena_a1",
+    "sortOrder": 6,
+    "words": [
+      {
+        "es": "poder",
+        "zh": "能够",
+        "pos": "verb",
+        "lemma": "poder",
+        "note": "疑问：¿Puedo…?"
+      },
+      {
+        "es": "deber",
+        "zh": "应该",
+        "pos": "verb",
+        "lemma": "deber"
+      },
+      {
+        "es": "permiso",
+        "zh": "许可；许可证",
+        "pos": "noun",
+        "note": "con permiso 借过"
+      },
+      {
+        "es": "prohibido",
+        "zh": "禁止",
+        "pos": "adj",
+        "note": "Prohibido fumar."
+      },
+      {
+        "es": "necesitar",
+        "zh": "需要",
+        "pos": "verb",
+        "lemma": "necesitar"
+      },
+      {
+        "es": "ayuda",
+        "zh": "帮助",
+        "pos": "noun",
+        "note": "pedir ayuda"
+      },
+      {
+        "es": "entender",
+        "zh": "明白；听懂",
+        "pos": "verb",
+        "lemma": "entender",
+        "note": "不规则"
+      },
+      {
+        "es": "repetir",
+        "zh": "重复",
+        "pos": "verb",
+        "lemma": "repetir"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u07",
+    "title": "走西1 · 环境",
+    "bookId": "suena_a1",
+    "sortOrder": 7,
+    "words": [
+      {
+        "es": "medio ambiente",
+        "zh": "环境",
+        "pos": "phrase"
+      },
+      {
+        "es": "basura",
+        "zh": "垃圾",
+        "pos": "noun"
+      },
+      {
+        "es": "reciclar",
+        "zh": "回收",
+        "pos": "verb",
+        "lemma": "reciclar"
+      },
+      {
+        "es": "agua",
+        "zh": "水",
+        "pos": "noun"
+      },
+      {
+        "es": "aire",
+        "zh": "空气",
+        "pos": "noun"
+      },
+      {
+        "es": "contaminación",
+        "zh": "污染",
+        "pos": "noun"
+      },
+      {
+        "es": "árbol",
+        "zh": "树",
+        "pos": "noun"
+      },
+      {
+        "es": "cuidar",
+        "zh": "照顾；爱护",
+        "pos": "verb",
+        "lemma": "cuidar",
+        "note": "cuidar el planeta"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u08",
+    "title": "走西1 · 谈谈过去",
+    "bookId": "suena_a1",
+    "sortOrder": 8,
+    "words": [
+      {
+        "es": "ayer",
+        "zh": "昨天",
+        "pos": "adv"
+      },
+      {
+        "es": "antes",
+        "zh": "以前",
+        "pos": "adv"
+      },
+      {
+        "es": "pasado",
+        "zh": "过去的",
+        "pos": "adj",
+        "note": "año pasado 去年"
+      },
+      {
+        "es": "contar",
+        "zh": "讲述；数数",
+        "pos": "verb",
+        "lemma": "contar",
+        "note": "不规则"
+      },
+      {
+        "es": "recordar",
+        "zh": "记得",
+        "pos": "verb",
+        "lemma": "recordar"
+      },
+      {
+        "es": "niñez",
+        "zh": "童年",
+        "pos": "noun"
+      },
+      {
+        "es": "historia",
+        "zh": "故事；历史",
+        "pos": "noun"
+      },
+      {
+        "es": "vez",
+        "zh": "次；回",
+        "pos": "noun",
+        "note": "una vez"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u09",
+    "title": "走西1 · 童年记忆",
+    "bookId": "suena_a1",
+    "sortOrder": 9,
+    "words": [
+      {
+        "es": "juguete",
+        "zh": "玩具",
+        "pos": "noun"
+      },
+      {
+        "es": "jugar",
+        "zh": "玩",
+        "pos": "verb",
+        "lemma": "jugar",
+        "note": "jugar al fútbol"
+      },
+      {
+        "es": "colegio",
+        "zh": "小学",
+        "pos": "noun"
+      },
+      {
+        "es": "vecino",
+        "zh": "邻居",
+        "pos": "noun",
+        "note": "vecina"
+      },
+      {
+        "es": "abuelo",
+        "zh": "祖父；外祖父",
+        "pos": "noun",
+        "note": "abuela"
+      },
+      {
+        "es": "recuerdo",
+        "zh": "回忆；纪念品",
+        "pos": "noun"
+      },
+      {
+        "es": "feliz",
+        "zh": "幸福的；快乐的",
+        "pos": "adj"
+      },
+      {
+        "es": "triste",
+        "zh": "悲伤的",
+        "pos": "adj"
+      }
+    ]
+  },
+  {
+    "unitId": "suena.a1.u10",
+    "title": "走西1 · 明天会怎样？",
+    "bookId": "suena_a1",
+    "sortOrder": 10,
+    "words": [
+      {
+        "es": "futuro",
+        "zh": "未来",
+        "pos": "noun"
+      },
+      {
+        "es": "mañana",
+        "zh": "明天；早晨",
+        "pos": "noun",
+        "note": "作副词：明天"
+      },
+      {
+        "es": "plan",
+        "zh": "计划",
+        "pos": "noun"
+      },
+      {
+        "es": "esperar",
+        "zh": "等待；希望",
+        "pos": "verb",
+        "lemma": "esperar"
+      },
+      {
+        "es": "sueño",
+        "zh": "梦；梦想",
+        "pos": "noun"
+      },
+      {
+        "es": "cambiar",
+        "zh": "改变",
+        "pos": "verb",
+        "lemma": "cambiar"
+      },
+      {
+        "es": "tecnología",
+        "zh": "技术",
+        "pos": "noun"
+      },
+      {
+        "es": "mundo",
+        "zh": "世界",
+        "pos": "noun"
+      }
+    ]
+  }
+]

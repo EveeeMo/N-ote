@@ -1,0 +1,26 @@
+TestFlight 与自用分发（需在 Apple Developer Program 有效会员前提下操作）
+
+一、前置
+1. 在 developer.apple.com 加入 Apple Developer Program（个人或组织，年费）。
+2. Xcode 使用同一 Apple ID 登录：Settings → Accounts，Team 选择你的开发者团队。
+3. 本工程 Bundle ID 为 com.eve.memorizespanish；在 App Store Connect 创建 App 时「套装 ID」须与此完全一致。若你已在 Connect 使用其他 ID，请在 Xcode Target → Signing & Capabilities 中改回一致。
+
+二、App Store Connect
+1. 打开 appstoreconnect.apple.com → 我的 App → 新建 App。
+2. 填写名称（可与主屏幕显示名不同）、主要语言、套装 ID（选择或注册 com.eve.memorizespanish）、SKU（任意内部编号）。
+
+三、Archive 与上传
+1. Xcode 选择 Any iOS Device 或真机，菜单 Product → Archive。
+2. Organizer 中选该归档 → Distribute App → App Store Connect → Upload，按向导完成。
+3. 在 App Store Connect → 你的 App → TestFlight 中等待处理完成（通常数分钟至数十分钟）。
+
+四、合规与问卷
+1. 首次提交构建时完成出口合规（加密）等问卷；本 App 若仅使用 HTTPS 等标准加密，一般选「是」并勾选豁免条款（以 Connect 当前文案为准）。
+2. 填写测试信息说明（给审核员看的备注）。
+
+五、测试者
+1. 内部测试：同组织成员，最多约 100 人，构建处理完后通常很快可用。
+2. 外部测试：可邀请邮箱，首次可能需要 Beta App Review；通过后即可分发更多测试者。
+
+六、仅开发机安装（不推荐大规模）
+若不走 TestFlight，可在 Devices 中注册 UDID，用 Development 描述文件安装；维护成本高，适合极少数设备调试。

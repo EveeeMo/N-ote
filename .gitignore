@@ -1,0 +1,22 @@
+.DS_Store
+
+# Xcode / Swift
+**/build/
+**/DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+**/xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Node（桌面词库服务）
+**/node_modules/
+DeskManualSync/data/
+npm-debug.log*
+
+# 环境与本机密钥（勿提交）
+.env
+.env.*

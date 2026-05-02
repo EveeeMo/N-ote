@@ -1,0 +1,14 @@
+{
+  "name": "note-desk-manual-sync",
+  "private": true,
+  "description": "Ñote 局域网桌面词库：网页添加单词并与 iOS APP 前台同步（须与 APP 同源 Token）",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

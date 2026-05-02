@@ -1,0 +1,188 @@
+hola|你好|interj
+adiós|再见|interj
+gracias|谢谢|noun
+por favor|请|phrase
+sí|是|adv
+no|不|adv
+buenos días|早上好|phrase
+buenas tardes|下午好|phrase
+buenas noches|晚上好；晚安|phrase
+perdón|对不起；打扰一下|noun
+el agua|水|noun
+el pan|面包|noun
+la leche|牛奶|noun
+comer|吃|verb|comer
+beber|喝|verb|beber
+el café|咖啡|noun
+el té|茶|noun
+la mesa|桌子|noun
+la silla|椅子|noun
+casa|房子；家|noun
+familia|家庭|noun
+padre|父亲|noun
+madre|母亲|noun
+hermano|兄弟|noun
+hermana|姐妹|noun
+amigo|男性朋友|noun
+amiga|女性朋友|noun
+trabajar|工作|verb|trabajar
+estudiar|学习|verb|estudiar
+vivir|居住；生活|verb|vivir
+el nombre|名字|noun
+el apellido|姓氏|noun
+la edad|年龄|noun
+casado|已婚的|adj
+soltero|单身的|adj
+el país|国家|noun
+la ciudad|城市|noun
+la calle|街道|noun
+el número|号码|noun
+el teléfono|电话|noun
+el correo|邮件|noun
+el color|颜色|noun
+blanco|白色的|adj
+negro|黑色的|adj
+rojo|红色的|adj
+azul|蓝色的|adj
+verde|绿色的|adj
+grande|大的|adj
+pequeño|小的|adj
+bueno|好的|adj
+malo|坏的|adj
+nuevo|新的|adj
+viejo|旧的；年老的|adj
+fácil|容易的|adj
+difícil|困难的|adj
+la puerta|门|noun
+la ventana|窗户|noun
+el suelo|地面|noun
+el techo|天花板|noun
+la cocina|厨房|noun
+el baño|浴室|noun
+el dormitorio|卧室|noun
+la cama|床|noun
+la ropa|衣服|noun
+el zapato|鞋|noun
+la camisa|衬衫|noun
+el pantalón|裤子|noun
+el vestido|连衣裙|noun
+el sombrero|帽子|noun
+el dinero|钱|noun
+el banco|银行|noun
+la tienda|商店|noun
+el mercado|市场|noun
+comprar|购买|verb|comprar
+vender|卖|verb|vender
+el precio|价格|noun
+caro|贵的|adj
+barato|便宜的|adj
+el tiempo|时间；天气|noun
+hoy|今天|adv
+mañana|明天|adv
+ayer|昨天|adv
+ahora|现在|adv
+después|之后|adv
+antes|之前|adv
+siempre|总是|adv
+nunca|从不|adv
+a veces|有时|phrase
+mucho|很多|adv
+poco|很少|adv
+muy|很|adv
+más|更|adv
+menos|更少|adv
+el día|白天|noun
+la noche|夜晚|noun
+la semana|星期|noun
+el mes|月份|noun
+el año|年|noun
+lunes|星期一|noun
+martes|星期二|noun
+miércoles|星期三|noun
+jueves|星期四|noun
+viernes|星期五|noun
+sábado|星期六|noun
+domingo|星期日|noun
+enero|一月|noun
+febrero|二月|noun
+marzo|三月|noun
+abril|四月|noun
+mayo|五月|noun
+junio|六月|noun
+el invierno|冬天|noun
+el verano|夏天|noun
+la primavera|春天|noun
+el otoño|秋天|noun
+hace frío|天冷|phrase
+hace calor|天热|phrase
+llueve|下雨|verb|llover
+nieva|下雪|verb|nevar
+el sol|太阳|noun
+la luna|月亮|noun
+la estrella|星星|noun
+el mar|海|noun
+la montaña|山|noun
+el río|河|noun
+el lago|湖|noun
+el bosque|森林|noun
+el animal|动物|noun
+el perro|狗|noun
+el gato|猫|noun
+el pájaro|鸟|noun
+el pez|鱼|noun
+la vaca|牛|noun
+el caballo|马|noun
+el coche|汽车|noun
+el autobús|公共汽车|noun
+el tren|火车|noun
+el avión|飞机|noun
+la estación|车站|noun
+el aeropuerto|机场|noun
+el hotel|旅馆|noun
+la habitación|房间|noun
+la reserva|预订|noun
+el billete|票|noun
+el pasaporte|护照|noun
+el mapa|地图|noun
+la maleta|行李箱|noun
+viajar|旅行|verb|viajar
+llegar|到达|verb|llegar
+salir|离开|verb|salir
+volver|返回|verb|volver
+pasear|散步|verb|pasear
+el paseo|散步|noun
+la playa|海滩|noun
+la piscina|游泳池|noun
+el cine|电影院|noun
+el teatro|剧院|noun
+el museo|博物馆|noun
+el parque|公园|noun
+el restaurante|餐馆|noun
+el menú|菜单|noun
+la cuenta|账单|noun
+la propina|小费|noun
+el camarero|男服务员|noun
+el plato|盘子；菜|noun
+la sopa|汤|noun
+la ensalada|沙拉|noun
+la carne|肉|noun
+el pescado|鱼（食材）|noun
+el pollo|鸡肉|noun
+el arroz|米饭|noun
+la pasta|面条|noun
+el aceite|油|noun
+la sal|盐|noun
+el azúcar|糖|noun
+dulce|甜的|adj
+salado|咸的|adj
+el desayuno|早餐|noun
+la comida|午餐；食物|noun
+la cena|晚餐|noun
+desayunar|吃早餐|verb|desayunar
+cenar|吃晚餐|verb|cenar
+tener hambre|饿|phrase
+tener sed|渴|phrase
+el zumo|果汁|noun
+el vino|葡萄酒|noun
+la cerveza|啤酒|noun
+el agua mineral|矿泉水|phrase

@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "bookId": "suena_a1",
+      "title": "走遍西班牙 1",
+      "subtitle": "A1 学生用书（内置词表为学习用示例，可与教材对照补充）",
+      "bundleFileName": "builtin_suena_a1"
+    },
+    {
+      "bookId": "xiandai_1",
+      "title": "现代西班牙语",
+      "subtitle": "第一册 · 1–24 课（内置词表为学习用示例）",
+      "bundleFileName": "builtin_xiandai_1"
+    }
+  ]
+}

@@ -1,0 +1,1298 @@
+[
+  {
+    "unitId": "dele_a1.g000",
+    "title": "DELE A1 · 第 1 组",
+    "bookId": "dele_a1",
+    "sortOrder": 0,
+    "words": [
+      {
+        "es": "hola",
+        "zh": "你好",
+        "pos": "interj",
+        "note": null
+      },
+      {
+        "es": "adiós",
+        "zh": "再见",
+        "pos": "interj",
+        "note": null
+      },
+      {
+        "es": "gracias",
+        "zh": "谢谢",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "por favor",
+        "zh": "请",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "sí",
+        "zh": "是",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "no",
+        "zh": "不",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "buenos días",
+        "zh": "早上好",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "buenas tardes",
+        "zh": "下午好",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "buenas noches",
+        "zh": "晚上好；晚安",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "perdón",
+        "zh": "对不起；打扰一下",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g001",
+    "title": "DELE A1 · 第 2 组",
+    "bookId": "dele_a1",
+    "sortOrder": 1,
+    "words": [
+      {
+        "es": "el agua",
+        "zh": "水",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el pan",
+        "zh": "面包",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la leche",
+        "zh": "牛奶",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "comer",
+        "zh": "吃",
+        "pos": "verb",
+        "note": null,
+        "lemma": "comer"
+      },
+      {
+        "es": "beber",
+        "zh": "喝",
+        "pos": "verb",
+        "note": null,
+        "lemma": "beber"
+      },
+      {
+        "es": "el café",
+        "zh": "咖啡",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el té",
+        "zh": "茶",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la mesa",
+        "zh": "桌子",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la silla",
+        "zh": "椅子",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "casa",
+        "zh": "房子；家",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g002",
+    "title": "DELE A1 · 第 3 组",
+    "bookId": "dele_a1",
+    "sortOrder": 2,
+    "words": [
+      {
+        "es": "familia",
+        "zh": "家庭",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "padre",
+        "zh": "父亲",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "madre",
+        "zh": "母亲",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "hermano",
+        "zh": "兄弟",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "hermana",
+        "zh": "姐妹",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "amigo",
+        "zh": "男性朋友",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "amiga",
+        "zh": "女性朋友",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "trabajar",
+        "zh": "工作",
+        "pos": "verb",
+        "note": null,
+        "lemma": "trabajar"
+      },
+      {
+        "es": "estudiar",
+        "zh": "学习",
+        "pos": "verb",
+        "note": null,
+        "lemma": "estudiar"
+      },
+      {
+        "es": "vivir",
+        "zh": "居住；生活",
+        "pos": "verb",
+        "note": null,
+        "lemma": "vivir"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g003",
+    "title": "DELE A1 · 第 4 组",
+    "bookId": "dele_a1",
+    "sortOrder": 3,
+    "words": [
+      {
+        "es": "el nombre",
+        "zh": "名字",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el apellido",
+        "zh": "姓氏",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la edad",
+        "zh": "年龄",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "casado",
+        "zh": "已婚的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "soltero",
+        "zh": "单身的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el país",
+        "zh": "国家",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la ciudad",
+        "zh": "城市",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la calle",
+        "zh": "街道",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el número",
+        "zh": "号码",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el teléfono",
+        "zh": "电话",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g004",
+    "title": "DELE A1 · 第 5 组",
+    "bookId": "dele_a1",
+    "sortOrder": 4,
+    "words": [
+      {
+        "es": "el correo",
+        "zh": "邮件",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el color",
+        "zh": "颜色",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "blanco",
+        "zh": "白色的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "negro",
+        "zh": "黑色的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "rojo",
+        "zh": "红色的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "azul",
+        "zh": "蓝色的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "verde",
+        "zh": "绿色的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "grande",
+        "zh": "大的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "pequeño",
+        "zh": "小的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "bueno",
+        "zh": "好的",
+        "pos": "adj",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g005",
+    "title": "DELE A1 · 第 6 组",
+    "bookId": "dele_a1",
+    "sortOrder": 5,
+    "words": [
+      {
+        "es": "malo",
+        "zh": "坏的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "nuevo",
+        "zh": "新的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "viejo",
+        "zh": "旧的；年老的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "fácil",
+        "zh": "容易的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "difícil",
+        "zh": "困难的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "la puerta",
+        "zh": "门",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la ventana",
+        "zh": "窗户",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el suelo",
+        "zh": "地面",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el techo",
+        "zh": "天花板",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la cocina",
+        "zh": "厨房",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g006",
+    "title": "DELE A1 · 第 7 组",
+    "bookId": "dele_a1",
+    "sortOrder": 6,
+    "words": [
+      {
+        "es": "el baño",
+        "zh": "浴室",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el dormitorio",
+        "zh": "卧室",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la cama",
+        "zh": "床",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la ropa",
+        "zh": "衣服",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el zapato",
+        "zh": "鞋",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la camisa",
+        "zh": "衬衫",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el pantalón",
+        "zh": "裤子",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el vestido",
+        "zh": "连衣裙",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el sombrero",
+        "zh": "帽子",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el dinero",
+        "zh": "钱",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g007",
+    "title": "DELE A1 · 第 8 组",
+    "bookId": "dele_a1",
+    "sortOrder": 7,
+    "words": [
+      {
+        "es": "el banco",
+        "zh": "银行",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la tienda",
+        "zh": "商店",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el mercado",
+        "zh": "市场",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "comprar",
+        "zh": "购买",
+        "pos": "verb",
+        "note": null,
+        "lemma": "comprar"
+      },
+      {
+        "es": "vender",
+        "zh": "卖",
+        "pos": "verb",
+        "note": null,
+        "lemma": "vender"
+      },
+      {
+        "es": "el precio",
+        "zh": "价格",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "caro",
+        "zh": "贵的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "barato",
+        "zh": "便宜的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el tiempo",
+        "zh": "时间；天气",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "hoy",
+        "zh": "今天",
+        "pos": "adv",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g008",
+    "title": "DELE A1 · 第 9 组",
+    "bookId": "dele_a1",
+    "sortOrder": 8,
+    "words": [
+      {
+        "es": "mañana",
+        "zh": "明天",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "ayer",
+        "zh": "昨天",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "ahora",
+        "zh": "现在",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "después",
+        "zh": "之后",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "antes",
+        "zh": "之前",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "siempre",
+        "zh": "总是",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "nunca",
+        "zh": "从不",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "a veces",
+        "zh": "有时",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "mucho",
+        "zh": "很多",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "poco",
+        "zh": "很少",
+        "pos": "adv",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g009",
+    "title": "DELE A1 · 第 10 组",
+    "bookId": "dele_a1",
+    "sortOrder": 9,
+    "words": [
+      {
+        "es": "muy",
+        "zh": "很",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "más",
+        "zh": "更",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "menos",
+        "zh": "更少",
+        "pos": "adv",
+        "note": null
+      },
+      {
+        "es": "el día",
+        "zh": "白天",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la noche",
+        "zh": "夜晚",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la semana",
+        "zh": "星期",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el mes",
+        "zh": "月份",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el año",
+        "zh": "年",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "lunes",
+        "zh": "星期一",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "martes",
+        "zh": "星期二",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g010",
+    "title": "DELE A1 · 第 11 组",
+    "bookId": "dele_a1",
+    "sortOrder": 10,
+    "words": [
+      {
+        "es": "miércoles",
+        "zh": "星期三",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "jueves",
+        "zh": "星期四",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "viernes",
+        "zh": "星期五",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "sábado",
+        "zh": "星期六",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "domingo",
+        "zh": "星期日",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "enero",
+        "zh": "一月",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "febrero",
+        "zh": "二月",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "marzo",
+        "zh": "三月",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "abril",
+        "zh": "四月",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "mayo",
+        "zh": "五月",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g011",
+    "title": "DELE A1 · 第 12 组",
+    "bookId": "dele_a1",
+    "sortOrder": 11,
+    "words": [
+      {
+        "es": "junio",
+        "zh": "六月",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el invierno",
+        "zh": "冬天",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el verano",
+        "zh": "夏天",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la primavera",
+        "zh": "春天",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el otoño",
+        "zh": "秋天",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "hace frío",
+        "zh": "天冷",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "hace calor",
+        "zh": "天热",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "llueve",
+        "zh": "下雨",
+        "pos": "verb",
+        "note": null,
+        "lemma": "llover"
+      },
+      {
+        "es": "nieva",
+        "zh": "下雪",
+        "pos": "verb",
+        "note": null,
+        "lemma": "nevar"
+      },
+      {
+        "es": "el sol",
+        "zh": "太阳",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g012",
+    "title": "DELE A1 · 第 13 组",
+    "bookId": "dele_a1",
+    "sortOrder": 12,
+    "words": [
+      {
+        "es": "la luna",
+        "zh": "月亮",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la estrella",
+        "zh": "星星",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el mar",
+        "zh": "海",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la montaña",
+        "zh": "山",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el río",
+        "zh": "河",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el lago",
+        "zh": "湖",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el bosque",
+        "zh": "森林",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el animal",
+        "zh": "动物",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el perro",
+        "zh": "狗",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el gato",
+        "zh": "猫",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g013",
+    "title": "DELE A1 · 第 14 组",
+    "bookId": "dele_a1",
+    "sortOrder": 13,
+    "words": [
+      {
+        "es": "el pájaro",
+        "zh": "鸟",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el pez",
+        "zh": "鱼",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la vaca",
+        "zh": "牛",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el caballo",
+        "zh": "马",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el coche",
+        "zh": "汽车",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el autobús",
+        "zh": "公共汽车",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el tren",
+        "zh": "火车",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el avión",
+        "zh": "飞机",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la estación",
+        "zh": "车站",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el aeropuerto",
+        "zh": "机场",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g014",
+    "title": "DELE A1 · 第 15 组",
+    "bookId": "dele_a1",
+    "sortOrder": 14,
+    "words": [
+      {
+        "es": "el hotel",
+        "zh": "旅馆",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la habitación",
+        "zh": "房间",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la reserva",
+        "zh": "预订",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el billete",
+        "zh": "票",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el pasaporte",
+        "zh": "护照",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el mapa",
+        "zh": "地图",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la maleta",
+        "zh": "行李箱",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "viajar",
+        "zh": "旅行",
+        "pos": "verb",
+        "note": null,
+        "lemma": "viajar"
+      },
+      {
+        "es": "llegar",
+        "zh": "到达",
+        "pos": "verb",
+        "note": null,
+        "lemma": "llegar"
+      },
+      {
+        "es": "salir",
+        "zh": "离开",
+        "pos": "verb",
+        "note": null,
+        "lemma": "salir"
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g015",
+    "title": "DELE A1 · 第 16 组",
+    "bookId": "dele_a1",
+    "sortOrder": 15,
+    "words": [
+      {
+        "es": "volver",
+        "zh": "返回",
+        "pos": "verb",
+        "note": null,
+        "lemma": "volver"
+      },
+      {
+        "es": "pasear",
+        "zh": "散步",
+        "pos": "verb",
+        "note": null,
+        "lemma": "pasear"
+      },
+      {
+        "es": "el paseo",
+        "zh": "散步",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la playa",
+        "zh": "海滩",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la piscina",
+        "zh": "游泳池",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el cine",
+        "zh": "电影院",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el teatro",
+        "zh": "剧院",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el museo",
+        "zh": "博物馆",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el parque",
+        "zh": "公园",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el restaurante",
+        "zh": "餐馆",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g016",
+    "title": "DELE A1 · 第 17 组",
+    "bookId": "dele_a1",
+    "sortOrder": 16,
+    "words": [
+      {
+        "es": "el menú",
+        "zh": "菜单",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la cuenta",
+        "zh": "账单",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la propina",
+        "zh": "小费",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el camarero",
+        "zh": "男服务员",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el plato",
+        "zh": "盘子；菜",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la sopa",
+        "zh": "汤",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la ensalada",
+        "zh": "沙拉",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la carne",
+        "zh": "肉",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el pescado",
+        "zh": "鱼（食材）",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el pollo",
+        "zh": "鸡肉",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g017",
+    "title": "DELE A1 · 第 18 组",
+    "bookId": "dele_a1",
+    "sortOrder": 17,
+    "words": [
+      {
+        "es": "el arroz",
+        "zh": "米饭",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la pasta",
+        "zh": "面条",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el aceite",
+        "zh": "油",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la sal",
+        "zh": "盐",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el azúcar",
+        "zh": "糖",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "dulce",
+        "zh": "甜的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "salado",
+        "zh": "咸的",
+        "pos": "adj",
+        "note": null
+      },
+      {
+        "es": "el desayuno",
+        "zh": "早餐",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la comida",
+        "zh": "午餐；食物",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la cena",
+        "zh": "晚餐",
+        "pos": "noun",
+        "note": null
+      }
+    ]
+  },
+  {
+    "unitId": "dele_a1.g018",
+    "title": "DELE A1 · 第 19 组",
+    "bookId": "dele_a1",
+    "sortOrder": 18,
+    "words": [
+      {
+        "es": "desayunar",
+        "zh": "吃早餐",
+        "pos": "verb",
+        "note": null,
+        "lemma": "desayunar"
+      },
+      {
+        "es": "cenar",
+        "zh": "吃晚餐",
+        "pos": "verb",
+        "note": null,
+        "lemma": "cenar"
+      },
+      {
+        "es": "tener hambre",
+        "zh": "饿",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "tener sed",
+        "zh": "渴",
+        "pos": "phrase",
+        "note": null
+      },
+      {
+        "es": "el zumo",
+        "zh": "果汁",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el vino",
+        "zh": "葡萄酒",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "la cerveza",
+        "zh": "啤酒",
+        "pos": "noun",
+        "note": null
+      },
+      {
+        "es": "el agua mineral",
+        "zh": "矿泉水",
+        "pos": "phrase",
+        "note": null
+      }
+    ]
+  }
+]

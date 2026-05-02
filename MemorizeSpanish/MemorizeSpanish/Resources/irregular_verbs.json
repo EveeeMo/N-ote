@@ -1,0 +1,47 @@
+{
+  "ser": {
+    "tenses": {
+      "现在时": ["soy", "eres", "es", "somos", "sois", "son"],
+      "过去未完成": ["era", "eras", "era", "éramos", "erais", "eran"],
+      "简单过去": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
+      "简单将来": ["seré", "serás", "será", "seremos", "seréis", "serán"],
+      "条件式": ["sería", "serías", "sería", "seríamos", "seríais", "serían"]
+    }
+  },
+  "estar": {
+    "tenses": {
+      "现在时": ["estoy", "estás", "está", "estamos", "estáis", "están"],
+      "过去未完成": ["estaba", "estabas", "estaba", "estábamos", "estabais", "estaban"],
+      "简单过去": ["estuve", "estuviste", "estuvo", "estuvimos", "estuvisteis", "estuvieron"],
+      "简单将来": ["estaré", "estarás", "estará", "estaremos", "estaréis", "estarán"],
+      "条件式": ["estaría", "estarías", "estaría", "estaríamos", "estaríais", "estarían"]
+    }
+  },
+  "ir": {
+    "tenses": {
+      "现在时": ["voy", "vas", "va", "vamos", "vais", "van"],
+      "过去未完成": ["iba", "ibas", "iba", "íbamos", "ibais", "iban"],
+      "简单过去": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
+      "简单将来": ["iré", "irás", "irá", "iremos", "iréis", "irán"],
+      "条件式": ["iría", "irías", "iría", "iríamos", "iríais", "irían"]
+    }
+  },
+  "tener": {
+    "tenses": {
+      "现在时": ["tengo", "tienes", "tiene", "tenemos", "tenéis", "tienen"],
+      "过去未完成": ["tenía", "tenías", "tenía", "teníamos", "teníais", "tenían"],
+      "简单过去": ["tuve", "tuviste", "tuvo", "tuvimos", "tuvisteis", "tuvieron"],
+      "简单将来": ["tendré", "tendrás", "tendrá", "tendremos", "tendréis", "tendrán"],
+      "条件式": ["tendría", "tendrías", "tendría", "tendríamos", "tendríais", "tendrían"]
+    }
+  },
+  "haber": {
+    "tenses": {
+      "现在时": ["he", "has", "ha", "hemos", "habéis", "han"],
+      "过去未完成": ["había", "habías", "había", "habíamos", "habíais", "habían"],
+      "简单过去": ["hube", "hubiste", "hubo", "hubimos", "hubisteis", "hubieron"],
+      "简单将来": ["habré", "habrás", "habrá", "habremos", "habréis", "habrán"],
+      "条件式": ["habría", "habrías", "habría", "habríamos", "habríais", "habrían"]
+    }
+  }
+}

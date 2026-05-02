@@ -1,0 +1,52 @@
+---
+description: MemorizeSpanish iOS 协作（改代码后自动模拟器 build/install/launch、路径与约定）
+alwaysApply: true
+---
+
+# MemorizeSpanish 协作约定
+
+与仓库内 `AI协作备忘.md` 保持一致；后者可随项目增删，本规则为 Cursor 持久上下文摘要。
+
+## 有代码改动时：自动在模拟器跑一遍（必须）
+
+对 **MemorizeSpanish** 做了**实质修改**（Swift / 资源 / `project.pbxproj` / Xcode 配置等）后，**在同一轮对话里**须**自动执行**（无需等用户再说「跑模拟器」）：
+
+1. `xcodebuild` **build**（DerivedData 用 `/tmp`，见下）
+2. `xcrun simctl install` 装到**当前已 boot** 的模拟器
+3. `xcrun simctl launch` **启动** App
+
+**可跳过**：仅改文档（含本规则与纯备忘文字）、或与 MemorizeSpanish 无关的文件、且无任何工程变更时。
+
+- **工程**：`MemorizeSpanish/MemorizeSpanish.xcodeproj`
+- **Scheme**：`MemorizeSpanish`
+- **Bundle ID**：`com.example.MemorizeSpanish`
+- **模拟器**：常用 `iPhone 17`（若名称变更，用 `xcrun simctl list devices` 调整）
+
+为避免工程在「桌面」路径下偶发 **CodeSign / resource fork** 问题，**DerivedData 使用 `/tmp`**：
+
+```bash
+cd "/Users/eve/Desktop/桌面 - Eve的MacBook Pro/背单词/MemorizeSpanish"
+
+xcrun simctl boot "iPhone 17" 2>/dev/null || true
+open -a Simulator
+
+xcodebuild -scheme MemorizeSpanish \
+  -destination 'platform=iOS Simulator,name=iPhone 17' \
+  -configuration Debug \
+  -derivedDataPath "/tmp/MemorizeSpanishDerivedData" \
+  build
+
+UDID=$(xcrun simctl list devices booted | grep -oE '[A-F0-9-]{36}' | head -1)
+xcrun simctl install "$UDID" \
+  "/tmp/MemorizeSpanishDerivedData/Build/Products/Debug-iphonesimulator/MemorizeSpanish.app"
+xcrun simctl launch "$UDID" com.example.MemorizeSpanish
+```
+
+## SwiftData 与 Tab 页刷新
+
+`TabView` 里 **`@Query` 在「导入」Tab 保存后常不刷新**。做法：`MainTabView` 在收到 **`DataRefresh.notification`** 或切到「学习 / 词库」时，给 **`StudyView` / `LibraryView` 换新 `.id(UUID)`**，整页销毁重建以强制 **`@Query` 重新订阅**；子视图本身用 **`@Query`**即可。导入收尾用 **`DataRefresh.afterImportMutation`**（二次 `save` + `notify`）。
+
+## 其他
+
+- 用户偏好 **中文** 回复。
+- 内置教材词表为学习用示例；若需与商业教材全书一致，须自行处理版权合规或通过 JSON 导入补充。
