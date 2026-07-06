@@ -20,3 +20,7 @@ npm-debug.log*
 # 环境与本机密钥（勿提交）
 .env
 .env.*
+
+# 个人学习数据（勿提交）
+*.xcappdata/
+MemorizeSpanish-library*.json

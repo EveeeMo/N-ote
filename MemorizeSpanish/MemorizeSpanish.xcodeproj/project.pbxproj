@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		200000000000000000000001 /* MemorizeSpanishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000001 /* MemorizeSpanishApp.swift */; };
-		20000000000000000000003B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000003B /* AppDelegate.swift */; };
 		200000000000000000000002 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000002 /* MainTabView.swift */; };
 		200000000000000000000003 /* BundledUnitDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000003 /* BundledUnitDTO.swift */; };
 		200000000000000000000004 /* TextbookUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000004 /* TextbookUnit.swift */; };
@@ -50,6 +49,7 @@
 		200000000000000000000037 /* AppleAccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000037 /* AppleAccountManager.swift */; };
 		200000000000000000000038 /* TesterAccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000038 /* TesterAccessService.swift */; };
 		20000000000000000000003A /* DeskSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000039 /* DeskSyncService.swift */; };
+		20000000000000000000003B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000003B /* AppDelegate.swift */; };
 		20000000000000000000003C /* DeskSyncBackgroundScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000003C /* DeskSyncBackgroundScheduler.swift */; };
 		300000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000018 /* Assets.xcassets */; };
 		300000000000000000000002 /* units.json in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000019 /* units.json */; };
@@ -67,7 +67,6 @@
 
 /* Begin PBXFileReference section */
 		100000000000000000000001 /* MemorizeSpanishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeSpanishApp.swift; sourceTree = "<group>"; };
-		10000000000000000000003B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		100000000000000000000002 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		100000000000000000000003 /* BundledUnitDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundledUnitDTO.swift; sourceTree = "<group>"; };
 		100000000000000000000004 /* TextbookUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookUnit.swift; sourceTree = "<group>"; };
@@ -121,8 +120,9 @@
 		100000000000000000000037 /* AppleAccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountManager.swift; sourceTree = "<group>"; };
 		100000000000000000000038 /* TesterAccessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterAccessService.swift; sourceTree = "<group>"; };
 		100000000000000000000039 /* DeskSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskSyncService.swift; sourceTree = "<group>"; };
-		10000000000000000000003C /* DeskSyncBackgroundScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskSyncBackgroundScheduler.swift; sourceTree = "<group>"; };
 		10000000000000000000003A /* SupportingMergeInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SupportingMergeInfo.plist; sourceTree = "<group>"; };
+		10000000000000000000003B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10000000000000000000003C /* DeskSyncBackgroundScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskSyncBackgroundScheduler.swift; sourceTree = "<group>"; };
 		400000000000000000000001 /* MemorizeSpanish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorizeSpanish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -570,7 +570,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8KBRX554VF;
+				DEVELOPMENT_TEAM = C284C2QQS5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemorizeSpanish/SupportingMergeInfo.plist;
@@ -601,7 +601,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8KBRX554VF;
+				DEVELOPMENT_TEAM = C284C2QQS5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MemorizeSpanish/SupportingMergeInfo.plist;

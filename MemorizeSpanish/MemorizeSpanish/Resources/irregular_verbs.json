@@ -5,7 +5,9 @@
       "过去未完成": ["era", "eras", "era", "éramos", "erais", "eran"],
       "简单过去": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
       "简单将来": ["seré", "serás", "será", "seremos", "seréis", "serán"],
-      "条件式": ["sería", "serías", "sería", "seríamos", "seríais", "serían"]
+      "条件式": ["sería", "serías", "sería", "seríamos", "seríais", "serían"],
+      "虚拟现在时": ["sea", "seas", "sea", "seamos", "seáis", "sean"],
+      "肯定命令式": ["—", "sé", "sea", "seamos", "sed", "sean"]
     }
   },
   "estar": {
@@ -14,7 +16,9 @@
       "过去未完成": ["estaba", "estabas", "estaba", "estábamos", "estabais", "estaban"],
       "简单过去": ["estuve", "estuviste", "estuvo", "estuvimos", "estuvisteis", "estuvieron"],
       "简单将来": ["estaré", "estarás", "estará", "estaremos", "estaréis", "estarán"],
-      "条件式": ["estaría", "estarías", "estaría", "estaríamos", "estaríais", "estarían"]
+      "条件式": ["estaría", "estarías", "estaría", "estaríamos", "estaríais", "estarían"],
+      "虚拟现在时": ["esté", "estés", "esté", "estemos", "estéis", "estén"],
+      "肯定命令式": ["—", "está", "esté", "estemos", "estad", "estén"]
     }
   },
   "ir": {
@@ -23,7 +27,9 @@
       "过去未完成": ["iba", "ibas", "iba", "íbamos", "ibais", "iban"],
       "简单过去": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
       "简单将来": ["iré", "irás", "irá", "iremos", "iréis", "irán"],
-      "条件式": ["iría", "irías", "iría", "iríamos", "iríais", "irían"]
+      "条件式": ["iría", "irías", "iría", "iríamos", "iríais", "irían"],
+      "虚拟现在时": ["vaya", "vayas", "vaya", "vayamos", "vayáis", "vayan"],
+      "肯定命令式": ["—", "ve", "vaya", "vamos", "id", "vayan"]
     }
   },
   "tener": {
@@ -32,7 +38,9 @@
       "过去未完成": ["tenía", "tenías", "tenía", "teníamos", "teníais", "tenían"],
       "简单过去": ["tuve", "tuviste", "tuvo", "tuvimos", "tuvisteis", "tuvieron"],
       "简单将来": ["tendré", "tendrás", "tendrá", "tendremos", "tendréis", "tendrán"],
-      "条件式": ["tendría", "tendrías", "tendría", "tendríamos", "tendríais", "tendrían"]
+      "条件式": ["tendría", "tendrías", "tendría", "tendríamos", "tendríais", "tendrían"],
+      "虚拟现在时": ["tenga", "tengas", "tenga", "tengamos", "tengáis", "tengan"],
+      "肯定命令式": ["—", "ten", "tenga", "tengamos", "tened", "tengan"]
     }
   },
   "haber": {
@@ -41,7 +49,119 @@
       "过去未完成": ["había", "habías", "había", "habíamos", "habíais", "habían"],
       "简单过去": ["hube", "hubiste", "hubo", "hubimos", "hubisteis", "hubieron"],
       "简单将来": ["habré", "habrás", "habrá", "habremos", "habréis", "habrán"],
-      "条件式": ["habría", "habrías", "habría", "habríamos", "habríais", "habrían"]
+      "条件式": ["habría", "habrías", "habría", "habríamos", "habríais", "habrían"],
+      "虚拟现在时": ["haya", "hayas", "haya", "hayamos", "hayáis", "hayan"],
+      "肯定命令式": ["—", "he", "haya", "hayamos", "habed", "hayan"]
+    }
+  },
+  "dar": {
+    "tenses": {
+      "现在时": ["doy", "das", "da", "damos", "dais", "dan"],
+      "过去未完成": ["daba", "dabas", "daba", "dábamos", "dabais", "daban"],
+      "简单过去": ["di", "diste", "dio", "dimos", "disteis", "dieron"],
+      "简单将来": ["daré", "darás", "dará", "daremos", "daréis", "darán"],
+      "条件式": ["daría", "darías", "daría", "daríamos", "daríais", "darían"],
+      "虚拟现在时": ["dé", "des", "dé", "demos", "deis", "den"],
+      "肯定命令式": ["—", "da", "dé", "demos", "dad", "den"]
+    }
+  },
+  "venir": {
+    "tenses": {
+      "现在时": ["vengo", "vienes", "viene", "venimos", "venís", "vienen"],
+      "过去未完成": ["venía", "venías", "venía", "veníamos", "veníais", "venían"],
+      "简单过去": ["vine", "viniste", "vino", "vinimos", "vinisteis", "vinieron"],
+      "简单将来": ["vendré", "vendrás", "vendrá", "vendremos", "vendréis", "vendrán"],
+      "条件式": ["vendría", "vendrías", "vendría", "vendríamos", "vendríais", "vendrían"],
+      "虚拟现在时": ["venga", "vengas", "venga", "vengamos", "vengáis", "vengan"],
+      "肯定命令式": ["—", "ven", "venga", "vengamos", "venid", "vengan"]
+    }
+  },
+  "decir": {
+    "tenses": {
+      "现在时": ["digo", "dices", "dice", "decimos", "decís", "dicen"],
+      "过去未完成": ["decía", "decías", "decía", "decíamos", "decíais", "decían"],
+      "简单过去": ["dije", "dijiste", "dijo", "dijimos", "dijisteis", "dijeron"],
+      "简单将来": ["diré", "dirás", "dirá", "diremos", "diréis", "dirán"],
+      "条件式": ["diría", "dirías", "diría", "diríamos", "diríais", "dirían"],
+      "虚拟现在时": ["diga", "digas", "diga", "digamos", "digáis", "digan"],
+      "肯定命令式": ["—", "di", "diga", "digamos", "decid", "digan"]
+    }
+  },
+  "hacer": {
+    "tenses": {
+      "现在时": ["hago", "haces", "hace", "hacemos", "hacéis", "hacen"],
+      "过去未完成": ["hacía", "hacías", "hacía", "hacíamos", "hacíais", "hacían"],
+      "简单过去": ["hice", "hiciste", "hizo", "hicimos", "hicisteis", "hicieron"],
+      "简单将来": ["haré", "harás", "hará", "haremos", "haréis", "harán"],
+      "条件式": ["haría", "harías", "haría", "haríamos", "haríais", "harían"],
+      "虚拟现在时": ["haga", "hagas", "haga", "hagamos", "hagáis", "hagan"],
+      "肯定命令式": ["—", "haz", "haga", "hagamos", "haced", "hagan"]
+    }
+  },
+  "poner": {
+    "tenses": {
+      "现在时": ["pongo", "pones", "pone", "ponemos", "ponéis", "ponen"],
+      "过去未完成": ["ponía", "ponías", "ponía", "poníamos", "poníais", "ponían"],
+      "简单过去": ["puse", "pusiste", "puso", "pusimos", "pusisteis", "pusieron"],
+      "简单将来": ["pondré", "pondrás", "pondrá", "pondremos", "pondréis", "pondrán"],
+      "条件式": ["pondría", "pondrías", "pondría", "pondríamos", "pondríais", "pondrían"],
+      "虚拟现在时": ["ponga", "pongas", "ponga", "pongamos", "pongáis", "pongan"],
+      "肯定命令式": ["—", "pon", "ponga", "pongamos", "poned", "pongan"]
+    }
+  },
+  "querer": {
+    "tenses": {
+      "现在时": ["quiero", "quieres", "quiere", "queremos", "queréis", "quieren"],
+      "过去未完成": ["quería", "querías", "quería", "queríamos", "queríais", "querían"],
+      "简单过去": ["quise", "quisiste", "quiso", "quisimos", "quisisteis", "quisieron"],
+      "简单将来": ["querré", "querrás", "querrá", "querremos", "querréis", "querrán"],
+      "条件式": ["querría", "querrías", "querría", "querríamos", "querríais", "querrían"],
+      "虚拟现在时": ["quiera", "quieras", "quiera", "queramos", "queráis", "quieran"],
+      "肯定命令式": ["—", "quiere", "quiera", "queramos", "quered", "quieran"]
+    }
+  },
+  "poder": {
+    "tenses": {
+      "现在时": ["puedo", "puedes", "puede", "podemos", "podéis", "pueden"],
+      "过去未完成": ["podía", "podías", "podía", "podíamos", "podíais", "podían"],
+      "简单过去": ["pude", "pudiste", "pudo", "pudimos", "pudisteis", "pudieron"],
+      "简单将来": ["podré", "podrás", "podrá", "podremos", "podréis", "podrán"],
+      "条件式": ["podría", "podrías", "podría", "podríamos", "podríais", "podrían"],
+      "虚拟现在时": ["pueda", "puedas", "pueda", "podamos", "podáis", "puedan"],
+      "肯定命令式": ["—", "puede", "pueda", "podamos", "poded", "puedan"]
+    }
+  },
+  "saber": {
+    "tenses": {
+      "现在时": ["sé", "sabes", "sabe", "sabemos", "sabéis", "saben"],
+      "过去未完成": ["sabía", "sabías", "sabía", "sabíamos", "sabíais", "sabían"],
+      "简单过去": ["supe", "supiste", "supo", "supimos", "supisteis", "supieron"],
+      "简单将来": ["sabré", "sabrás", "sabrá", "sabremos", "sabréis", "sabrán"],
+      "条件式": ["sabría", "sabrías", "sabría", "sabríamos", "sabríais", "sabrían"],
+      "虚拟现在时": ["sepa", "sepas", "sepa", "sepamos", "sepáis", "sepan"],
+      "肯定命令式": ["—", "sabe", "sepa", "sepamos", "sabed", "sepan"]
+    }
+  },
+  "ver": {
+    "tenses": {
+      "现在时": ["veo", "ves", "ve", "vemos", "veis", "ven"],
+      "过去未完成": ["veía", "veías", "veía", "veíamos", "veíais", "veían"],
+      "简单过去": ["vi", "viste", "vio", "vimos", "visteis", "vieron"],
+      "简单将来": ["veré", "verás", "verá", "veremos", "veréis", "verán"],
+      "条件式": ["vería", "verías", "vería", "veríamos", "veríais", "verían"],
+      "虚拟现在时": ["vea", "veas", "vea", "veamos", "veáis", "vean"],
+      "肯定命令式": ["—", "ve", "vea", "veamos", "ved", "vean"]
+    }
+  },
+  "traer": {
+    "tenses": {
+      "现在时": ["traigo", "traes", "trae", "traemos", "traéis", "traen"],
+      "过去未完成": ["traía", "traías", "traía", "traíamos", "traíais", "traían"],
+      "简单过去": ["traje", "trajiste", "trajo", "trajimos", "trajisteis", "trajeron"],
+      "简单将来": ["traeré", "traerás", "traerá", "traeremos", "traeréis", "traerán"],
+      "条件式": ["traería", "traerías", "traería", "traeríamos", "traeríais", "traerían"],
+      "虚拟现在时": ["traiga", "traigas", "traiga", "traigamos", "traigáis", "traigan"],
+      "肯定命令式": ["—", "trae", "traiga", "traigamos", "traed", "traigan"]
     }
   }
 }

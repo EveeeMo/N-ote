@@ -39,6 +39,11 @@ struct ConjugationService {
             return irregular.forms(infinitive: inf, tense: tense)
         }
 
+        /// 原形已在不规则表中但该时态尚未录入 JSON 时，不能用规则动词推导（否则会给出错误形式）。
+        if irregular.isListedVerb(infinitive: inf) {
+            return Array(repeating: "—", count: 6)
+        }
+
         return regularForms(infinitive: inf, tense: tense)
     }
 
@@ -196,6 +201,10 @@ private struct IrregularTable {
 
     func hasIrregular(infinitive: String, tense: SpanishTense) -> Bool {
         stems[infinitive]?.tenses[tense.rawValue] != nil
+    }
+
+    func isListedVerb(infinitive: String) -> Bool {
+        stems[infinitive] != nil
     }
 
     func forms(infinitive: String, tense: SpanishTense) -> [String] {
