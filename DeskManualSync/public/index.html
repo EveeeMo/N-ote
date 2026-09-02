@@ -168,6 +168,34 @@
     </section>
 
     <section>
+      <strong>批量导入</strong>
+      <div class="hint">每行一个西语（也可用逗号分隔）。自动匹配中文与词性后可校对，再写入服务端；手机同步后会进入<strong>今日复习</strong>。</div>
+      <label for="batchText">西语列表</label>
+      <textarea id="batchText" style="min-height: 160px" placeholder="Gemelo&#10;Madrina&#10;…"></textarea>
+      <label style="display:flex;align-items:center;gap:8px;margin-top:10px">
+        <input type="checkbox" id="spellFix" checked />
+        <span>自动纠正常见拼写（如 Melizo→mellizo、Gries→grises）</span>
+      </label>
+      <div class="row" style="margin-top: 14px">
+        <button type="button" class="secondary" id="btnBatchPreview">解析并预览（联网翻译）</button>
+        <button type="button" id="btnBatchImport" disabled>确认导入并加入今日复习</button>
+      </div>
+      <div class="toast" id="batchMsg"></div>
+      <div style="overflow-x: auto; margin-top: 12px">
+        <table>
+          <thead>
+            <tr>
+              <th>西语</th>
+              <th>释义</th>
+              <th>词性</th>
+            </tr>
+          </thead>
+          <tbody id="batchBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
       <strong>添加 / 修改</strong>（同源西语条目会覆盖网页端旧记录）
       <label for="es">西语</label>
       <input id="es" type="text" placeholder="单词或短语" />
@@ -307,6 +335,14 @@
         if (r.status === 401) throw new Error("令牌无效，请与服务端 NOTE_DESK_SYNC_TOKEN 对齐。");
         if (!r.ok) throw new Error(j.error || "保存失败");
         show(msg, "已写入服务端，rev " + j.revision + " ，共 " + j.count + " 条。（APP 打开前台会自动拉取）");
+        // 清空表单便于连续录入；词性重置为 noun
+        document.getElementById("es").value = "";
+        document.getElementById("zh").value = "";
+        document.getElementById("lemma").value = "";
+        document.getElementById("note").value = "";
+        document.getElementById("pos").value = "noun";
+        toggLemma();
+        document.getElementById("es").focus();
         await refreshTable();
       } catch (e) {
         show(msg, String(e.message || e), true);
@@ -381,6 +417,144 @@
     }
 
     document.getElementById("btnRefresh").onclick = () => refreshTable();
+
+    let batchPreviewRows = [];
+
+    function renderBatchPreview(rows) {
+      batchPreviewRows = rows || [];
+      const tbody = document.getElementById("batchBody");
+      tbody.innerHTML = "";
+      const btnImport = document.getElementById("btnBatchImport");
+      btnImport.disabled = !batchPreviewRows.length;
+      for (let i = 0; i < batchPreviewRows.length; i++) {
+        const w = batchPreviewRows[i];
+        const tr = document.createElement("tr");
+        tr.innerHTML =
+          '<td><input data-i="' +
+          i +
+          '" data-f="es" type="text" value="' +
+          escapeAttr(w.es || "") +
+          '" /></td>' +
+          '<td><input data-i="' +
+          i +
+          '" data-f="zh" type="text" value="' +
+          escapeAttr(w.zh || "") +
+          '" /></td>' +
+          '<td><select data-i="' +
+          i +
+          '" data-f="pos">' +
+          ["noun", "verb", "adj", "adv", "prep", "interj", "phrase"]
+            .map(
+              (p) =>
+                '<option value="' +
+                p +
+                '"' +
+                (w.pos === p ? " selected" : "") +
+                ">" +
+                p +
+                "</option>"
+            )
+            .join("") +
+          "</select></td>";
+        tbody.appendChild(tr);
+      }
+      tbody.querySelectorAll("input,select").forEach((el) => {
+        el.addEventListener("change", () => {
+          const i = Number(el.getAttribute("data-i"));
+          const f = el.getAttribute("data-f");
+          if (!batchPreviewRows[i]) return;
+          batchPreviewRows[i][f] = el.value;
+          if (f === "pos" && el.value === "verb") batchPreviewRows[i].lemma = batchPreviewRows[i].es;
+          if (f === "pos" && el.value !== "verb") batchPreviewRows[i].lemma = null;
+        });
+      });
+    }
+
+    function escapeAttr(s) {
+      return String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/"/g, "&quot;")
+        .replace(/</g, "&lt;");
+    }
+
+    function collectBatchFromInputs() {
+      return batchPreviewRows.map((w) => ({
+        es: w.es,
+        zh: w.zh,
+        pos: w.pos,
+        lemma: w.pos === "verb" ? w.lemma || w.es : null,
+        note: w.note || null,
+        scheduleDue: true,
+      }));
+    }
+
+    document.getElementById("btnBatchPreview").onclick = async () => {
+      const msg = document.getElementById("batchMsg");
+      show(msg, "");
+      const text = document.getElementById("batchText").value;
+      if (!text.trim()) {
+        show(msg, "请先粘贴西语列表。", true);
+        return;
+      }
+      const btn = document.getElementById("btnBatchPreview");
+      btn.disabled = true;
+      show(msg, "正在翻译，词较多时可能需要一两分钟…");
+      try {
+        const r = await fetch("/api/words/batch/preview", {
+          method: "POST",
+          headers: headersAuth(),
+          body: JSON.stringify({
+            text,
+            spellFix: document.getElementById("spellFix").checked,
+          }),
+        });
+        const j = await r.json();
+        if (r.status === 401) throw new Error("令牌无效，请与服务端 NOTE_DESK_SYNC_TOKEN 对齐。");
+        if (!r.ok) throw new Error(j.error || "预览失败");
+        renderBatchPreview(j.words || []);
+        show(msg, "已预览 " + (j.count || 0) + " 条，可改释义/词性后再点导入。");
+      } catch (e) {
+        show(msg, String(e.message || e), true);
+      } finally {
+        btn.disabled = false;
+      }
+    };
+
+    document.getElementById("btnBatchImport").onclick = async () => {
+      const msg = document.getElementById("batchMsg");
+      show(msg, "");
+      const words = collectBatchFromInputs();
+      if (!words.length) {
+        show(msg, "没有可导入的词，请先预览。", true);
+        return;
+      }
+      const btn = document.getElementById("btnBatchImport");
+      btn.disabled = true;
+      try {
+        const r = await fetch("/api/words/batch", {
+          method: "POST",
+          headers: headersAuth(),
+          body: JSON.stringify({ words }),
+        });
+        const j = await r.json();
+        if (r.status === 401) throw new Error("令牌无效。");
+        if (!r.ok) throw new Error(j.error || "导入失败");
+        show(
+          msg,
+          "已写入服务端：新增 " +
+            j.added +
+            " · 更新 " +
+            j.updated +
+            " · rev " +
+            j.revision +
+            "。打开手机 App（或设置里点立即同步）后会进入今日复习。"
+        );
+        await refreshTable();
+      } catch (e) {
+        show(msg, String(e.message || e), true);
+        btn.disabled = false;
+      }
+    };
 
     refreshTable().catch(() => {});
   </script>
