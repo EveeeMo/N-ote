@@ -135,6 +135,113 @@ function parseSpanishLines(raw) {
   return out;
 }
 
+function stripMdCell(raw) {
+  let s = String(raw || "").trim();
+  // **bold** / *italic* / `code` / ⭐
+  s = s.replace(/\*\*/g, "").replace(/\*/g, "");
+  s = s.replace(/`([^`]*)`/g, "$1");
+  s = s.replace(/⭐+/g, "").trim();
+  return s;
+}
+
+function splitMdRow(line) {
+  let s = String(line || "").trim();
+  if (s.startsWith("|")) s = s.slice(1);
+  if (s.endsWith("|")) s = s.slice(0, -1);
+  return s.split("|").map((c) => c.trim());
+}
+
+function isMdSeparatorRow(cells) {
+  return cells.length > 0 && cells.every((c) => /^:?-{3,}:?$/.test(c.replace(/\s/g, "")));
+}
+
+function classifyHeaderCell(raw) {
+  const t = stripMdCell(raw).toLowerCase();
+  if (!t) return null;
+  if (/(西语|西班牙语|spanish|\bes\b|palabra|词条|单词)/.test(t)) return "es";
+  if (/(中文|释义|翻译|chinese|\bzh\b|意思|含义)/.test(t)) return "zh";
+  if (/(备注|用法|重要|笔记|note|example|搭配)/.test(t)) return "note";
+  if (/(词性|pos)/.test(t)) return "pos";
+  return null;
+}
+
+/**
+ * 解析粘贴内容：支持 Markdown 表格（西语/中文/备注）或纯西语列表。
+ * @returns {{ es: string, zh?: string, note?: string, pos?: string }[]}
+ */
+function parseBatchInput(raw) {
+  const text = String(raw || "").replace(/^\uFEFF/, "").trim();
+  if (!text) return [];
+
+  const lines = text.split(/\r?\n/);
+  const tableLines = lines.filter((ln) => ln.includes("|"));
+  // 至少表头 + 分隔 + 一行数据
+  if (tableLines.length >= 3) {
+    const rows = tableLines.map(splitMdRow).filter((c) => c.some((x) => x.trim()));
+    if (rows.length >= 3) {
+      let headerIdx = 0;
+      let mapping = rows[0].map(classifyHeaderCell);
+      // 若第一行不像表头，尝试找含「西语」的行
+      if (!mapping.includes("es")) {
+        for (let i = 0; i < Math.min(rows.length, 5); i++) {
+          const m = rows[i].map(classifyHeaderCell);
+          if (m.includes("es")) {
+            headerIdx = i;
+            mapping = m;
+            break;
+          }
+        }
+      }
+      // 默认三列：西语 | 中文 | 备注
+      if (!mapping.includes("es")) {
+        mapping = rows[headerIdx].map((_, i) => (i === 0 ? "es" : i === 1 ? "zh" : i === 2 ? "note" : null));
+      }
+
+      const out = [];
+      const seen = new Set();
+      for (let r = headerIdx + 1; r < rows.length; r++) {
+        const cells = rows[r];
+        if (isMdSeparatorRow(cells)) continue;
+        let es = "";
+        let zh = "";
+        let note = "";
+        let pos = "";
+        for (let i = 0; i < cells.length; i++) {
+          const role = mapping[i];
+          const val = stripMdCell(cells[i]);
+          if (!role || !val) continue;
+          if (role === "es") es = val;
+          else if (role === "zh") zh = val;
+          else if (role === "note") note = val;
+          else if (role === "pos") pos = val;
+        }
+        // 无映射时：第 0 西语，第 1 中文，其余拼进备注
+        if (!es && cells[0]) {
+          es = stripMdCell(cells[0]);
+          if (!zh && cells[1]) zh = stripMdCell(cells[1]);
+          if (!note && cells.length > 2) {
+            note = cells.slice(2).map(stripMdCell).filter(Boolean).join("；");
+          }
+        }
+        if (!es) continue;
+        const key = normalizeSpanish(es);
+        if (!key || seen.has(key)) continue;
+        seen.add(key);
+        out.push({
+          es,
+          zh: zh || undefined,
+          note: note || undefined,
+          pos: pos || undefined,
+        });
+      }
+      if (out.length) return out;
+    }
+  }
+
+  // 纯列表
+  return parseSpanishLines(text).map((es) => ({ es }));
+}
+
 function applySpellHint(es, enabled) {
   if (!enabled) return es;
   const hint = SPELL_HINTS[normalizeSpanish(es)];
@@ -225,10 +332,10 @@ const LOCAL_GLOSS = Object.freeze({
   rechazar: "拒绝；排斥",
 });
 
-async function enrichWord(esRaw, { spellFix = true, translate = true } = {}) {
+async function enrichWord(esRaw, { spellFix = true, translate = true, zh: zhIn, note, pos: posIn } = {}) {
   const es = applySpellHint(String(esRaw || "").trim(), spellFix);
   const local = LOCAL_GLOSS[normalizeSpanish(es)] || "";
-  let zh = local;
+  let zh = (zhIn && String(zhIn).trim()) || local;
   if (translate && !zh) {
     try {
       zh = await translateMyMemory(es);
@@ -236,25 +343,34 @@ async function enrichWord(esRaw, { spellFix = true, translate = true } = {}) {
       zh = "";
     }
   }
-  let pos = appPartOfSpeech(es);
-  // 带空格/介词结构的多半是短语
-  if (/\s/.test(es) || /\+/.test(es)) pos = "phrase";
+  let pos = (posIn && String(posIn).trim()) || appPartOfSpeech(es);
+  if (/\s/.test(es) || /\+/.test(es) || /\//.test(es)) pos = "phrase";
   const lemma = pos === "verb" ? es : null;
-  return { es, zh, pos, lemma, note: null, scheduleDue: true };
+  const noteVal = note && String(note).trim() ? String(note).trim() : null;
+  return { es, zh, pos, lemma, note: noteVal, scheduleDue: true };
 }
 
-/** 有限并发，避免串行翻译拖到 Railway 网关超时（表现为 upstream error）。 */
-async function enrichMany(list, { spellFix = true, concurrency = 3 } = {}) {
+/** 有限并发；已有中文的条目跳过联网翻译。 */
+async function enrichMany(items, { spellFix = true, concurrency = 3 } = {}) {
+  const list = items.map((it) => (typeof it === "string" ? { es: it } : it));
   const rows = new Array(list.length);
   let next = 0;
   async function worker() {
     while (true) {
       const i = next++;
       if (i >= list.length) return;
-      rows[i] = await enrichWord(list[i], { spellFix, translate: true });
+      const it = list[i];
+      const hasZh = Boolean(it.zh && String(it.zh).trim());
+      rows[i] = await enrichWord(it.es, {
+        spellFix,
+        translate: !hasZh,
+        zh: it.zh,
+        note: it.note,
+        pos: it.pos,
+      });
     }
   }
-  const n = Math.max(1, Math.min(concurrency, list.length));
+  const n = Math.max(1, Math.min(concurrency, list.length || 1));
   await Promise.all(Array.from({ length: n }, () => worker()));
   return rows;
 }
@@ -374,21 +490,30 @@ app.post("/api/word/delete", authBearer, async (req, res) => {
 });
 
 /**
- * 批量预览：粘贴西语列表 → 自动翻译 + 词性（不写入）。
- * body: { text?: string, words?: string[], spellFix?: boolean }
+ * 批量预览：粘贴西语列表或 Markdown 表 → 自动补全缺失释义 + 词性（不写入）。
+ * body: { text?: string, words?: string[]|object[], spellFix?: boolean }
  */
 app.post("/api/words/batch/preview", authBearer, async (req, res) => {
   try {
     const spellFix = req.body?.spellFix !== false;
-    const fromText = parseSpanishLines(req.body?.text);
-    const fromArr = Array.isArray(req.body?.words)
-      ? req.body.words.map((x) => String(x || "").trim()).filter(Boolean)
-      : [];
-    const list = parseSpanishLines([...fromText, ...fromArr].join("\n"));
-    if (!list.length) return res.status(400).json({ error: "empty_list" });
-    if (list.length > 200) return res.status(400).json({ error: "too_many", max: 200 });
+    let items = parseBatchInput(req.body?.text);
+    if (Array.isArray(req.body?.words) && req.body.words.length) {
+      const extra = req.body.words
+        .map((x) => (typeof x === "string" ? { es: x } : x))
+        .filter((x) => x && x.es);
+      // 合并：text 优先，再追加 words
+      const seen = new Set(items.map((w) => normalizeSpanish(w.es)));
+      for (const w of extra) {
+        const k = normalizeSpanish(w.es);
+        if (!k || seen.has(k)) continue;
+        seen.add(k);
+        items.push(w);
+      }
+    }
+    if (!items.length) return res.status(400).json({ error: "empty_list" });
+    if (items.length > 200) return res.status(400).json({ error: "too_many", max: 200 });
 
-    const words = await enrichMany(list, { spellFix });
+    const words = await enrichMany(items, { spellFix });
     res.json({ count: words.length, words });
   } catch (e) {
     res.status(502).json({ error: String(e.message || e) });
@@ -396,7 +521,7 @@ app.post("/api/words/batch/preview", authBearer, async (req, res) => {
 });
 
 /**
- * 批量写入：可直接传 text，或传已校对的 words[{es,zh,pos,...}]。
+ * 批量写入：可直接传 text（含 Markdown 表），或传已校对的 words[{es,zh,pos,note,...}]。
  * 写入的词会带 scheduleDue，App 同步后排入今日复习。
  */
 app.post("/api/words/batch", authBearer, async (req, res) => {
@@ -406,39 +531,20 @@ app.post("/api/words/batch", authBearer, async (req, res) => {
 
     if (Array.isArray(req.body?.words) && req.body.words.length && typeof req.body.words[0] === "object") {
       const posOptions = new Set(["noun", "verb", "adj", "adv", "prep", "interj", "phrase"]);
-      for (const w of req.body.words) {
-        const es = typeof w?.es === "string" ? w.es.trim() : "";
-        if (!es) continue;
-        let zh = typeof w?.zh === "string" ? w.zh.trim() : "";
-        let pos = typeof w?.pos === "string" ? w.pos.trim() : "";
-        if (!zh) {
-          try {
-            zh = await translateMyMemory(es);
-          } catch {
-            zh = "";
-          }
-          await sleep(200);
-        }
-        if (!pos || !posOptions.has(pos)) pos = appPartOfSpeech(es);
-        const lemma = pos === "verb" ? es : null;
-        rows.push({
-          es,
-          zh,
-          pos,
-          lemma,
-          note: typeof w?.note === "string" && w.note.trim() ? w.note.trim() : null,
-          scheduleDue: true,
-        });
-      }
+      rows = await enrichMany(
+        req.body.words.map((w) => ({
+          es: w?.es,
+          zh: w?.zh,
+          note: w?.note,
+          pos: w?.pos && posOptions.has(w.pos) ? w.pos : undefined,
+        })),
+        { spellFix }
+      );
     } else {
-      const fromText = parseSpanishLines(req.body?.text);
-      const fromArr = Array.isArray(req.body?.words)
-        ? req.body.words.map((x) => String(x || "").trim()).filter(Boolean)
-        : [];
-      const list = parseSpanishLines([...fromText, ...fromArr].join("\n"));
-      if (!list.length) return res.status(400).json({ error: "empty_list" });
-      if (list.length > 200) return res.status(400).json({ error: "too_many", max: 200 });
-      rows = await enrichMany(list, { spellFix });
+      const items = parseBatchInput(req.body?.text);
+      if (!items.length) return res.status(400).json({ error: "empty_list" });
+      if (items.length > 200) return res.status(400).json({ error: "too_many", max: 200 });
+      rows = await enrichMany(items, { spellFix });
     }
 
     if (!rows.length) return res.status(400).json({ error: "empty_list" });
@@ -460,6 +566,14 @@ app.post("/api/words/batch", authBearer, async (req, res) => {
         scheduleDue: true,
       };
       if (idx >= 0) {
+        // 合并备注：新备注追加，不丢旧的
+        const oldNote = store.words[idx].note || "";
+        if (next.note && oldNote && !oldNote.includes(next.note)) {
+          next.note = oldNote + "\n" + next.note;
+        } else if (!next.note && oldNote) {
+          next.note = oldNote;
+        }
+        if (!next.zh && store.words[idx].zh) next.zh = store.words[idx].zh;
         store.words[idx] = { ...store.words[idx], ...next };
         updated += 1;
       } else {

@@ -169,9 +169,9 @@
 
     <section>
       <strong>批量导入</strong>
-      <div class="hint">每行一个西语（也可用逗号分隔）。自动匹配中文与词性后可校对，再写入服务端；手机同步后会进入<strong>今日复习</strong>。</div>
-      <label for="batchText">西语列表</label>
-      <textarea id="batchText" style="min-height: 160px" placeholder="Gemelo&#10;Madrina&#10;…"></textarea>
+      <div class="hint">支持：① 每行一个西语；② Markdown 表（列：西语 / 中文 / 备注或用法）。表格里已有中文则<strong>不再联网翻译</strong>；备注会写入 App。导入后手机同步进<strong>今日复习</strong>。</div>
+      <label for="batchText">粘贴列表或表格</label>
+      <textarea id="batchText" style="min-height: 200px" placeholder="| 西语 | 中文 | 备注 |&#10;| --- | --- | --- |&#10;| **día libre** | 休息日 | tener un día libre |"></textarea>
       <label style="display:flex;align-items:center;gap:8px;margin-top:10px">
         <input type="checkbox" id="spellFix" checked />
         <span>自动纠正常见拼写（如 Melizo→mellizo、Gries→grises）</span>
@@ -188,6 +188,7 @@
               <th>西语</th>
               <th>释义</th>
               <th>词性</th>
+              <th>备注</th>
             </tr>
           </thead>
           <tbody id="batchBody"></tbody>
@@ -466,7 +467,12 @@
                 "</option>"
             )
             .join("") +
-          "</select></td>";
+          "</select></td>" +
+          '<td><input data-i="' +
+          i +
+          '" data-f="note" type="text" value="' +
+          escapeAttr(w.note || "") +
+          '" /></td>';
         tbody.appendChild(tr);
       }
       tbody.querySelectorAll("input,select").forEach((el) => {
@@ -509,7 +515,7 @@
       }
       const btn = document.getElementById("btnBatchPreview");
       btn.disabled = true;
-      show(msg, "正在翻译，词较多时可能需要一两分钟…");
+      show(msg, "正在解析（表格有中文则跳过翻译）…");
       try {
         const r = await fetch("/api/words/batch/preview", {
           method: "POST",
