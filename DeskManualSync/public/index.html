@@ -262,6 +262,17 @@
       el.classList.toggle("err", !!isErr);
     }
 
+    async function readJson(r) {
+      const text = await r.text();
+      if (!text) throw new Error("服务器返回空响应（HTTP " + r.status + "）");
+      try {
+        return JSON.parse(text);
+      } catch {
+        const snippet = text.replace(/\s+/g, " ").slice(0, 160);
+        throw new Error("服务器异常：" + snippet + "（HTTP " + r.status + "）。请稍后重试或检查令牌。");
+      }
+    }
+
     function headersAuth() {
       const t = (document.getElementById("tok").value || "").trim();
       if (!t) throw new Error("请先填写 Bearer Token（与服务端 NOTE_DESK_SYNC_TOKEN 一致）");
@@ -508,11 +519,19 @@
             spellFix: document.getElementById("spellFix").checked,
           }),
         });
-        const j = await r.json();
+        const j = await readJson(r);
         if (r.status === 401) throw new Error("令牌无效，请与服务端 NOTE_DESK_SYNC_TOKEN 对齐。");
         if (!r.ok) throw new Error(j.error || "预览失败");
         renderBatchPreview(j.words || []);
-        show(msg, "已预览 " + (j.count || 0) + " 条，可改释义/词性后再点导入。");
+        const missing = (j.words || []).filter((w) => !w.zh).length;
+        show(
+          msg,
+          "已预览 " +
+            (j.count || 0) +
+            " 条" +
+            (missing ? "（其中 " + missing + " 条未自动译出，可手改）" : "") +
+            "，可改释义/词性后再点导入。"
+        );
       } catch (e) {
         show(msg, String(e.message || e), true);
       } finally {
@@ -536,7 +555,7 @@
           headers: headersAuth(),
           body: JSON.stringify({ words }),
         });
-        const j = await r.json();
+        const j = await readJson(r);
         if (r.status === 401) throw new Error("令牌无效。");
         if (!r.ok) throw new Error(j.error || "导入失败");
         show(

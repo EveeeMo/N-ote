@@ -51,7 +51,7 @@ function appPartOfSpeech(spanish) {
     if (/^(lleno|blando|sucio|húmedo|humedo|calvo|canoso|corto|largo|liso|moreno|pelirrojo|rizado|rubio|claro|clara|claros|oscuro|oscuros|grises|gris|transparente|seguro|capaz)$/u.test(lower)) {
       return "adj";
     }
-    const prep = new Set(["de", "a", "en", "con", "por", "para", "sin", "sobre", "entre", "hacia", "hasta"]);
+    const prep = new Set(["de", "a", "en", "con", "por", "para", "sin", "sobre", "entre", "hacia", "hasta", "mediante"]);
     if (prep.has(lower)) return "prep";
     return "noun";
   }
@@ -98,10 +98,16 @@ async function translateMyMemory(spanish) {
     langpair: "es|zh-CN",
   });
   const url = `https://api.mymemory.translated.net/get?${qs}`;
-  const r = await fetch(url);
-  if (!r.ok) throw new Error(`MyMemory HTTP ${r.status}`);
-  const j = await r.json();
-  return String(j?.responseData?.translatedText || "").trim();
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 5000);
+  try {
+    const r = await fetch(url, { signal: ctrl.signal });
+    if (!r.ok) throw new Error(`MyMemory HTTP ${r.status}`);
+    const j = await r.json();
+    return String(j?.responseData?.translatedText || "").trim();
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 function sleep(ms) {
@@ -208,6 +214,15 @@ const LOCAL_GLOSS = Object.freeze({
   pared: "墙",
   guerra: "战争",
   nariz: "鼻子",
+  despertar: "叫醒；醒来；唤醒",
+  "luchar contra": "与…作斗争；反对",
+  "luchar a favor de": "为…而斗争；支持",
+  "dar prioridad a": "优先考虑；给…优先权",
+  mediante: "通过；凭借",
+  "convertir a en b": "把 A 变成 B",
+  "llevar a + inf.": "导致做某事；促使",
+  "llevar a + inf": "导致做某事；促使",
+  rechazar: "拒绝；排斥",
 });
 
 async function enrichWord(esRaw, { spellFix = true, translate = true } = {}) {
@@ -221,19 +236,26 @@ async function enrichWord(esRaw, { spellFix = true, translate = true } = {}) {
       zh = "";
     }
   }
-  const pos = appPartOfSpeech(es);
+  let pos = appPartOfSpeech(es);
+  // 带空格/介词结构的多半是短语
+  if (/\s/.test(es) || /\+/.test(es)) pos = "phrase";
   const lemma = pos === "verb" ? es : null;
   return { es, zh, pos, lemma, note: null, scheduleDue: true };
 }
 
-async function enrichMany(list, { spellFix = true, delayMs = 320 } = {}) {
-  const rows = [];
-  for (let i = 0; i < list.length; i++) {
-    const esHint = applySpellHint(list[i], spellFix);
-    const hasLocal = Boolean(LOCAL_GLOSS[normalizeSpanish(esHint)]);
-    rows.push(await enrichWord(list[i], { spellFix, translate: true }));
-    if (!hasLocal && i + 1 < list.length && delayMs > 0) await sleep(delayMs);
+/** 有限并发，避免串行翻译拖到 Railway 网关超时（表现为 upstream error）。 */
+async function enrichMany(list, { spellFix = true, concurrency = 3 } = {}) {
+  const rows = new Array(list.length);
+  let next = 0;
+  async function worker() {
+    while (true) {
+      const i = next++;
+      if (i >= list.length) return;
+      rows[i] = await enrichWord(list[i], { spellFix, translate: true });
+    }
   }
+  const n = Math.max(1, Math.min(concurrency, list.length));
+  await Promise.all(Array.from({ length: n }, () => worker()));
   return rows;
 }
 
@@ -268,7 +290,12 @@ app.use(express.static(ROOT));
 app.post("/api/translate", async (req, res) => {
   try {
     const q = typeof req.body?.q === "string" ? req.body.q : "";
-    const zh = await translateMyMemory(q);
+    let zh = "";
+    try {
+      zh = await translateMyMemory(q);
+    } catch {
+      zh = "";
+    }
     const pos = appPartOfSpeech(q);
     res.json({ zh, pos });
   } catch (e) {
