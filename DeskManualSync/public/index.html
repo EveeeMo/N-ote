@@ -189,6 +189,7 @@
               <th>释义</th>
               <th>词性</th>
               <th>备注</th>
+              <th></th>
             </tr>
           </thead>
           <tbody id="batchBody"></tbody>
@@ -432,6 +433,34 @@
 
     let batchPreviewRows = [];
 
+    function syncBatchPreviewFromDom() {
+      document.querySelectorAll("#batchBody [data-i][data-f]").forEach((el) => {
+        const i = Number(el.getAttribute("data-i"));
+        const f = el.getAttribute("data-f");
+        if (!batchPreviewRows[i] || !f) return;
+        batchPreviewRows[i][f] = el.value;
+        if (f === "pos" && el.value === "verb") batchPreviewRows[i].lemma = batchPreviewRows[i].es;
+        if (f === "pos" && el.value !== "verb") batchPreviewRows[i].lemma = null;
+      });
+    }
+
+    function removeBatchPreviewRow(index) {
+      syncBatchPreviewFromDom();
+      if (index < 0 || index >= batchPreviewRows.length) return;
+      const removed = batchPreviewRows[index];
+      batchPreviewRows.splice(index, 1);
+      renderBatchPreview(batchPreviewRows);
+      const msg = document.getElementById("batchMsg");
+      show(
+        msg,
+        "已移除「" +
+          (removed?.es || "") +
+          "」，剩余 " +
+          batchPreviewRows.length +
+          " 条。确认后只会导入列表中留下的词。"
+      );
+    }
+
     function renderBatchPreview(rows) {
       batchPreviewRows = rows || [];
       const tbody = document.getElementById("batchBody");
@@ -472,7 +501,10 @@
           i +
           '" data-f="note" type="text" value="' +
           escapeAttr(w.note || "") +
-          '" /></td>';
+          '" /></td>' +
+          '<td><button type="button" class="danger-outline" data-del="' +
+          i +
+          '">删</button></td>';
         tbody.appendChild(tr);
       }
       tbody.querySelectorAll("input,select").forEach((el) => {
@@ -485,6 +517,11 @@
           if (f === "pos" && el.value !== "verb") batchPreviewRows[i].lemma = null;
         });
       });
+      tbody.querySelectorAll("button[data-del]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          removeBatchPreviewRow(Number(btn.getAttribute("data-del")));
+        });
+      });
     }
 
     function escapeAttr(s) {
@@ -495,6 +532,7 @@
     }
 
     function collectBatchFromInputs() {
+      syncBatchPreviewFromDom();
       return batchPreviewRows.map((w) => ({
         es: w.es,
         zh: w.zh,
